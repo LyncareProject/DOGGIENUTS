@@ -1,0 +1,702 @@
+.container {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.mainBg img {
+  width: 100%;
+  height: auto;
+}
+.section {
+  max-width: 1000px;
+  height: auto;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: row-reverse;
+  column-gap: 10px;
+}
+.sectionImg {
+  margin: 0 auto;
+  width: 100%;
+}
+.sectionImg img {
+  width: 100%;
+}
+
+.sectionTextBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: auto 0;
+  position: relative;
+}
+.text01,
+.text02 {
+  margin-bottom: 50px;
+  padding-left: 35px;
+  position: relative;
+}
+.text01 h2 {
+  color: #5a5a5a;
+  font-size: 20px;
+  margin: 0;
+}
+.text01 div {
+  color: #787878;
+  font-size: 16px;
+}
+.text01 span {
+  color: #ff7124;
+}
+
+.text02 {
+  margin-bottom: 50px;
+  padding-left: 35px;
+}
+
+.text02 h2 {
+  margin-left: 105px;
+  color: #5a5a5a;
+  font-size: 20px;
+}
+.text02 div {
+  width: 390px;
+  color: #2c2c2c;
+  font-size: 16px;
+}
+.text02 span {
+  color: #ffb104;
+}
+
+.text01 .yellow {
+  width: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 10px;
+  margin-bottom: -50px;
+}
+.yellow img {
+  width: 100%;
+}
+
+.text02 .yellow {
+  width: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 0px;
+  margin-bottom: -50px;
+}
+.section03 .yellowFlip {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: -340px;
+  margin-bottom: -30px;
+}
+.section03 .yellowFlip img {
+  width: 50px;
+}
+
+.section03 {
+  max-width: 1000px;
+  height: auto;
+  margin: 100px auto;
+  column-gap: 10px;
+  position: relative;
+}
+
+.sectionTextBox03 {
+  position: absolute;
+  bottom: 0%;
+  right: 0;
+  margin-right: 40px;
+  margin-bottom: 50px;
+}
+
+.text03 h2 {
+  margin-left: 70px;
+  text-align: center;
+  font-size: 32px;
+  margin: 0;
+  color: #010101;
+  font-size: 35px;
+  font-weight: 700;
+}
+.text03 .span {
+  color: #ffb104;
+}
+.text03 div {
+  width: 390px;
+  color: #2c2c2c;
+  font-size: 16px;
+}
+.text03 span {
+  color: #ffb104;
+}
+
+.section04 {
+  max-width: 1000px;
+  height: auto;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  position: relative;
+}
+.section04 .sectionImg {
+  margin: auto;
+  width: 700px;
+  margin-right: 40px;
+}
+
+.text04 {
+  margin-left: 40px;
+}
+.text04 .gray {
+  color: #696969;
+  font-size: 18px;
+  font-weight: 500;
+}
+.text04 h2 {
+  width: 470px;
+  color: #5a5a5a;
+  font-size: 20px;
+  margin: 0;
+}
+.text04 div {
+  color: #282828;
+  font-size: 16px;
+}
+.text04 span {
+  color: #ff7124;
+}
+.section04 .yellowFlip {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 20px;
+  margin-bottom: -35px;
+}
+.section04 .yellowFlip img {
+  width: 50px;
+}
+
+.section05 {
+  max-width: 1000px;
+  height: auto;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  column-gap: 10px;
+  position: relative;
+}
+.section05 .sectionTextBox {
+  margin: 0 auto;
+  display: block;
+}
+.section05 .sectionImg img {
+  width: 100%;
+}
+.title05 {
+  margin: 0 auto;
+  font-size: 35px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.title05 span {
+  color: #ffb104;
+}
+.text05 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  /* margin-left: 80px; */
+}
+
+.trippa {
+  text-align: center;
+}
+.trippa img {
+  max-width: 80%;
+  margin-bottom: 10px;
+}
+.trippa div {
+  color: #010101;
+  font-weight: 500;
+  font-size: 20px;
+  white-space: nowrap;
+}
+.trippa span {
+  color: #dc4f2d;
+  font-weight: 500;
+  font-size: 22px;
+}
+.ratatouille {
+  text-align: center;
+}
+.ratatouille img {
+  max-width: 80%;
+  margin-bottom: 10px;
+}
+.ratatouille div {
+  color: #010101;
+  font-weight: 500;
+  font-size: 20px;
+  white-space: nowrap;
+}
+.ratatouille span {
+  color: #578c36;
+  font-weight: 500;
+  font-size: 22px;
+}
+.bouillabaisse {
+  text-align: center;
+}
+.bouillabaisse img {
+  max-width: 80%;
+  margin-bottom: 10px;
+}
+.bouillabaisse div {
+  color: #010101;
+  font-weight: 500;
+  font-size: 20px;
+  white-space: nowrap;
+}
+.bouillabaisse span {
+  color: #6b279a;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.section06 {
+  max-width: 1000px;
+  height: auto;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 50px;
+  position: relative;
+}
+.text06 {
+  gap: 100px;
+}
+.text06 h2 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  margin: 0;
+}
+.text06 h2 span {
+  color: #ffb104;
+}
+.text06 div {
+  width: 100%;
+  text-align: center;
+  color: #010101;
+  font-weight: 500;
+  font-size: 20px;
+}
+.text06 p {
+  width: 90%;
+  color: #696969;
+  font-size: 18px;
+}
+
+.section06 .yellowFlip {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: fit-content;
+  margin-right: 40px;
+  margin-bottom: -15px;
+}
+.section06 .yellowFlip img {
+  width: 50px;
+}
+.section06 .sectionImg {
+  margin: auto;
+}
+
+.sectionTextBox07 {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  margin-left: -5px;
+  margin-bottom: 30px;
+}
+.text07 h2 {
+  text-align: center;
+  color: #010101;
+  font-size: 35px;
+  font-weight: 700;
+  margin: 0;
+}
+.text07 span {
+  color: #ffb104;
+}
+.text07 div {
+  width: 430px;
+  color: #656565;
+  text-align: center;
+  font-size: 16px;
+}
+
+.text08 {
+  margin-left: 40px;
+  position: relative;
+}
+.text08 h2 {
+  width: 470px;
+  color: #5a5a5a;
+  font-size: 20px;
+  margin: 0;
+}
+.text08 div {
+  width: 470px;
+  color: #5a5a5a;
+  font-size: 24px;
+}
+.text08 span {
+  color: #ff7124;
+}
+.text08 .yellowFlip {
+  width: fit-content;
+  margin-right: 0;
+}
+
+.section09 {
+  max-width: 1000px;
+  height: auto;
+  margin: 50px auto;
+  display: flex;
+  justify-content: right;
+  flex-direction: row;
+  column-gap: 30px;
+  position: relative;
+}
+.text09 {
+  text-align: right;
+  color: #010101;
+  font-weight: 500;
+  font-size: 30px;
+  margin-right: 60px;
+}
+
+.yellowStick {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 40px;
+  margin-bottom: 0px;
+}
+.yellowStick img {
+  width: 10px;
+}
+.swiper {
+  z-index: 100 important;
+}
+
+@media screen and (max-width: 1000px) {
+  .text03 h2 {
+    margin-left: 0px;
+    text-align: center;
+    font-size: 30px;
+  }
+  .text03 .span {
+    color: #ffb104;
+  }
+  .text03 div {
+    color: #2c2c2c;
+    font-size: 16px;
+  }
+
+  .trippa div {
+    font-size: 18px;
+  }
+  .trippa span {
+    font-size: 18px;
+  }
+  .ratatouille div {
+    font-size: 18px;
+  }
+  .ratatouille span {
+    font-size: 18px;
+  }
+  .bouillabaisse div {
+    font-size: 18px;
+  }
+  .bouillabaisse span {
+    font-size: 18px;
+  }
+  .text08 div {
+    font-size: 18px;
+    width: 340px;
+  }
+  .text08 .yellowFlip {
+    margin-right: 0px;
+  }
+
+  .text09 div {
+    margin-right: 0px;
+    font-size: 22px;
+  }
+  .yellowStick img {
+    width: 10px;
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    flex-direction: column;
+  }
+  .text01 {
+    padding-left: 0;
+    margin: 0 auto;
+  }
+  .text01 .yellow {
+    margin-left: -30px;
+    margin-bottom: -50px;
+  }
+
+  .text02 {
+    margin: 0 auto;
+    padding-left: 0;
+  }
+  .text02 h2 {
+    margin-left: 0;
+    text-align: center;
+    font-size: 25px;
+  }
+  .text02 div {
+    margin: 0 auto;
+    width: 75%;
+    font-size: 20px;
+  }
+  .text02 .yellow {
+    margin-left: 60px;
+  }
+  .sectionTextBox03 {
+    position: relative;
+    bottom: 0%;
+    right: 0;
+    margin: 0 auto;
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+  .text03 h2 {
+    margin-top: 30px;
+  }
+  .text03 div {
+    margin: 0 auto;
+    width: 70%;
+    font-size: 20px;
+  }
+
+  .section04 {
+    display: flex;
+    flex-direction: column;
+  }
+  .section04 .sectionImg {
+    margin-right: 0;
+    margin: 0 auto;
+    width: 50%;
+  }
+  .text04 {
+    margin-left: 0;
+    margin: 0 auto;
+    position: relative;
+  }
+  .text04 h2 {
+    margin: 0 auto;
+    width: 70%;
+  }
+  .text04 div {
+    margin: 0 auto;
+    width: 70%;
+  }
+  .section04 .yellowFlip {
+    margin-right: 150px;
+    width: 0;
+  }
+
+  .trippa img {
+    max-width: 50%;
+  }
+  .ratatouille img {
+    max-width: 50%;
+  }
+  .bouillabaisse img {
+    max-width: 50%;
+  }
+  .trippa {
+    margin-bottom: 30px;
+  }
+  .trippa div {
+    font-size: 20px;
+  }
+  .trippa span {
+    font-size: 22px;
+  }
+  .ratatouille {
+    margin-bottom: 30px;
+  }
+  .ratatouille div {
+    font-size: 20px;
+  }
+  .ratatouille span {
+    font-size: 22px;
+  }
+  .bouillabaisse div {
+    font-size: 20px;
+  }
+  .bouillabaisse span {
+    font-size: 22px;
+  }
+  .sectionTextBox {
+    margin: 50px auto;
+  }
+  .text05 {
+    flex-direction: column;
+  }
+
+  .section06 {
+    flex-direction: column;
+  }
+  .section06 .sectionImg {
+    display: flex;
+    justify-content: center;
+  }
+  .section06 .sectionImg img {
+    max-width: 640px;
+  }
+  .text06 {
+    margin: 0 auto;
+  }
+  .text06 h2 {
+    margin: 0 auto;
+  }
+  .text06 .yellowFlip {
+    width: fit-content;
+    margin-right: 60px;
+    margin-bottom: -20px;
+  }
+  .text06 p {
+    width: 100%;
+  }
+
+  .sectionTextBox07 {
+    position: relative;
+  }
+  .text07 h2 {
+    margin-top: 30px;
+  }
+  .text07 div {
+    margin: 0 auto;
+    font-size: 18px;
+    width: 100%;
+  }
+  .text08 {
+    margin-left: 0;
+    margin: 0 auto;
+  }
+  .text08 div {
+    margin: 0 auto;
+    text-align: center;
+    width: 72%;
+    font-size: 18px;
+  }
+
+  .text09 {
+    margin: 0 auto;
+  }
+  .text09 div {
+    text-align: center;
+    font-size: 18px;
+  }
+  .yellowStick img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .text01 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .text01 h2 {
+    font-size: 20px;
+  }
+  .text01 div {
+    font-size: 14px;
+  }
+  .yellow {
+    display: none;
+  }
+  .yellowFlip {
+    display: none;
+  }
+
+  .text03 h2 {
+    font-size: 20px;
+  }
+  .text03 div {
+    font-size: 14px;
+  }
+
+  .text04 {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .text04 h2 {
+    text-align: left;
+    width: 70%;
+    font-size: 16px;
+  }
+  .text04 .gray {
+    font-size: 16px;
+  }
+
+  .text06 p {
+    margin: 10px auto;
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .text07 h2 {
+    margin-top: 15px;
+    font-size: 30px;
+  }
+  .text07 div {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .text08 div {
+    font-size: 16px;
+  }
+
+  .text09 {
+    margin: 0 auto;
+  }
+  .text09 div {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 16px;
+  }
+
+  .text02 h2 {
+    font-size: 20px;
+  }
+  .text02 div {
+    width: 90%;
+    font-size: 16px;
+  }
+}
