@@ -40,9 +40,9 @@
 
 .ContactBar p{
     display: block;
-    width: 120px;
+    width: 100px;
     background-color: #8b3dff;
-    padding: 10px 5px 6px 17px;
+    padding: 10px 5px 10px 15px;
     border-radius: 15px;
     
     box-shadow: 1px 1px 1px black;

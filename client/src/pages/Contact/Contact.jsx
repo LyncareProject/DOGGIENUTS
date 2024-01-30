@@ -12,8 +12,6 @@ const Contact = ({ setSending }) => {
     TextArea: "",
   });
   const { Name, Phone, Email, Company, Country, TextArea } = inputs;
-  const [selectItems, setSelectItems] = useState([]);
-  const [sample, setSample] = useState([]);
   const handleInput = (e) => {
     setInputs({
       ...inputs,
@@ -32,8 +30,6 @@ const Contact = ({ setSending }) => {
       company: Company,
       country: Country,
       products: TextArea,
-      selectItems: JSON.stringify(selectItems),
-      sample: JSON.stringify(sample),
     }).then((response) => {
       if (response.data.message === "Success") {
         alert("Complete");
@@ -49,44 +45,24 @@ const Contact = ({ setSending }) => {
       setSending(false);
     });
   };
-  const items = ["Donuts", "Chips", "Stew", "Omega"];
-  const handleCheckboxChange = (event) => {
-    const value = event.target.value;
-    if (selectItems.includes(value)) {
-      setSelectItems(selectItems.filter((item) => item !== value));
-    } else {
-      setSelectItems([...selectItems, value]);
-    }
-  };
-  const sampleItems = ["Donuts", "Chips", "Stew", "Omega"];
-  const sampleCheckboxChange = (event) => {
-    const value = event.target.value;
-    if (sample.includes(value)) {
-      setSample(sample.filter((sampleItems) => sampleItems !== value));
-    } else {
-      setSample([...sample, value]);
-    }
-  };
-
-  // useEffect(() => {
-  //   console.log(selectItems); // 업데이트된 상태를 확인합니다
-  // }, [selectItems]); // selectItems가 변경될 때만 실행됩니다
-
   return (
     <div className="Contact Wrap">
       <div className="ContactBanner">
         <h3>Contact</h3>
-        <div>If you have any suggestions or any questions,</div>
-        <div>please contact us.</div>
-        <div>We are looking forward to hearing from you.</div>
+        <p>
+          If you want any suggestions or have any simple questions, please
+          contact us.
+          <br />
+          We are looking forward to hearing from you.
+        </p>
       </div>
       <div className="ContactWrap">
         <div className="ContactDivision">
           <div className="ContactInputSubWrap">
             <div>
-              <h3 className="ContactInputTitle">
+              <label htmlFor="Name" className="ContactInputTitle">
                 Name <span className="Red">*</span>
-              </h3>
+              </label>
               <input
                 id="Name"
                 className="ContactInputDivision"
@@ -98,7 +74,9 @@ const Contact = ({ setSending }) => {
               />
             </div>
             <div>
-              <h3 className="ContactInputTitle">Phone</h3>
+              <label htmlFor="Phone" className="ContactInputTitle">
+                Phone
+              </label>
               <input
                 className="ContactInputDivision"
                 name="Phone"
@@ -145,37 +123,8 @@ const Contact = ({ setSending }) => {
             />
           </div>
         </div>
-
         <div className="ContactDivision">
-          <h3 className="ContactInputTitle">Product of Interest (Multiple)</h3>
-          <div className="ContactSelectWrap">
-            {items.map((item) => (
-              <div className="CheckboxWrap">
-                <input
-                  type="checkbox"
-                  value={item}
-                  checked={selectItems.includes(item)}
-                  onChange={handleCheckboxChange}
-                />
-                <label htmlFor={item}>{item}</label>
-              </div>
-            ))}
-          </div>
-          <h3 className="ContactInputTitle">Sample of Interest (Multiple)</h3>
-          <div className="ContactSelectWrap">
-            {sampleItems.map((sampleItems) => (
-              <div className="CheckboxWrap">
-                <input
-                  type="checkbox"
-                  value={sampleItems}
-                  checked={sample.includes(sampleItems)}
-                  onChange={sampleCheckboxChange}
-                />
-                <label htmlFor={sampleItems}>{sampleItems}</label>
-              </div>
-            ))}
-          </div>
-          <div className="ContactInputWrap">
+          <div className="ContactInputWrap , ContactInputWrap_2">
             <h3 className="ContactInputTitle">Text Area</h3>
             <textarea
               className="ContactTextArea"
@@ -183,10 +132,7 @@ const Contact = ({ setSending }) => {
               id=""
               cols="30"
               rows="10"
-              placeholder="Sample Request
-- Minimum of 1 box per sample
-- a shipping fee
-- Wholesale supply price "
+              placeholder="Text Area"
               onChange={handleInput}
               value={TextArea}
             ></textarea>

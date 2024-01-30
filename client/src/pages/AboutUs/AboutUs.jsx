@@ -51,46 +51,14 @@ const AboutUs = () => {
               <p className="seciton_3border"></p>
             
               <ul className="seciton_3Text">
-                <li>2016.05&nbsp; 
-                  <ol>
-                    <li> Doggienuts Brand Planning Selected and awarded at the Naver Entrepreneurial Idea Competition</li>
-                  </ol> 
-                </li>
-                <li>2017.02 &nbsp; 
-                  <ol>
-                    <li> Launch of <span>'Dancing Doggienuts,'</span> a specialized natural pet food brand</li>
-                  </ol>
-                </li>
-                <li>2017.03 &nbsp; 
-                  <ol>
-                    <li> Release of the unprecedented natural donut <span>'Doggienuts'</span> and commencement of online and offline sales</li>
-                  </ol>
-                </li>
-                <li>2017.05 &nbsp; 
-                  <ol>
-                    <li> Introduction of 'Doggienuts' cheese line</li>
-                  </ol>
-                </li>
-                <li>2018.01 &nbsp; 
-                  <ol>
-                    <li> Release of <span>'Doggienuts Chips,'</span> a chewy and Hard dry form of natural dog treats</li>
-                  </ol>
-                </li>
-                <li>2020.06 &nbsp; 
-                  <ol>
-                    <li> Launch of the industry's first insect protein natural dog treats, <span>'Buggienuts'</span> (Achieved highest single-brand sales at Lotte Department Store Pet Section).</li>
-                  </ol>
-                </li>
-                <li>2021.02 &nbsp; 
-                  <ol>
-                    <li> Lotte Department Store X Dognut collaboration event; Lotte ON Mall's entire menu sells out early</li>
-                  </ol>
-                </li>
-                <li>2022.11 &nbsp; 
-                  <ol>
-                    <li> Release of new menu <span>'Doggienut Stew'</span>(1st place in the <span>'New Product of the Year'</span> category at the 2022 K Pet Fair Mega Show)</li>
-                  </ol>
-                </li>
+                <li>2016.05 &nbsp; Doggienuts Brand Planning Selected and awarded at the Naver Entrepreneurial Idea Competition</li>
+                <li>2017.02 &nbsp; Launch of <span>'Dancing Doggienuts,'</span> a specialized natural pet food brand</li>
+                <li>2017.03 &nbsp; Release of the unprecedented natural donut <span>'Doggienuts'</span> and commencement of online and offline sales</li>
+                <li>2017.05 &nbsp; Introduction of 'Doggienuts' cheese line</li>
+                <li>2018.01 &nbsp; Release of <span>'Doggienuts Chips,'</span> a chewy and Hard dry form of natural dog treats</li>
+                <li>2020.06 &nbsp; Launch of the industry's first insect protein natural dog treats, <span>'Buggienuts'</span> (Achieved highest single-brand sales at Lotte Department Store Pet Section).</li>
+                <li>2021.02 &nbsp; Lotte Department Store X Dognut collaboration event; Lotte ON Mall's entire menu sells out early</li>
+                <li>2022.11 &nbsp; Release of new menu <span>'Doggienut Stew'</span>(1st place in the <span>'New Product of the Year'</span> category at the 2022 K Pet Fair Mega Show)</li>
               </ul>
             </div>
        

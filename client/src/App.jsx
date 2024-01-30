@@ -9,20 +9,20 @@ import AboutUs from "./pages/AboutUs/AboutUs";
 import Header from "./components/Header/Header";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Footer from "./components/Footer/Footer";
-import ContactBar from "./components/ContactBar/ContactBar"
+import ContactBar from "./components/ContactBar/ContactBar";
+import MoveToUp from "./components/MoveToUp/MoveToUp";
 // import Header from "./components/Header/Header";
 
 function App() {
   const [sending, setSending] = useState(false);
   return (
     <div>
-
       <Header />
       <Sidebar />
       <ContactBar />
+      <MoveToUp />
       <Sending sending={sending} />
       <Routes>
-        
         <Route path="/" element={<Main />} />
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/contact" element={<Contact setSending={setSending} />} />
@@ -31,4 +31,5 @@ function App() {
     </div>
   );
 }
+
 export default App;
