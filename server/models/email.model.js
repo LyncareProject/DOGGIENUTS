@@ -6,6 +6,8 @@ const emailSchema = new mongoose.Schema({
   company: { type: String, required: true },
   phone: { type: String, required: true },
   email: { type: String, required: true },
+  selectItems: { type: String, required: true },
+  // sample: { type: String, required: true },
   products: { type: String, required: true },
   createdAt: { type: String, default: moment().format("YYYY-MM-DD hh:mm:ss") },
   updatedAt: { type: String },

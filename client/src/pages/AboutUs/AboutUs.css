@@ -214,11 +214,15 @@ hr{
 .seciton_3 ul li{
     margin-bottom:24px;
     line-height: 1.3;
+    font-weight: bold;
 }
 .seciton_3Text li span{
     font-weight: bold;
 }
+.seciton_3Text ol li{
 
+    font-weight: normal;
+}
 
 
 .section_4 {
@@ -312,6 +316,7 @@ hr{
 
     .seciton_3 ul li{
         margin-bottom: 10px;
+        
     }
     
     .section_4 .text_left{

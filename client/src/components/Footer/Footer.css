@@ -6,6 +6,7 @@
  font-size: 14px;
  font-weight: 400;
  margin: 0;
+ margin-top: 40px;
 
 }
 
@@ -56,6 +57,7 @@
 
 @media (max-width: 600px){
     .Footer{
+        margin-top: 0;
         margin-bottom: 25px;
     }
 }

@@ -2,9 +2,14 @@
 
 const mongoose = require("mongoose");
 
-const { MONGO_PASSWORD, MONGO_CLUSTER, MONGO_USER } = require("./common");
+const {
+  MONGO_PASSWORD,
+  MONGO_CLUSTER,
+  MONGO_USER,
+  MONGO_DBNAME,
+} = require("./common");
 
-const MONGO_URL = `mongodb+srv://${MONGO_USER}:${MONGO_PASSWORD}@${MONGO_CLUSTER}/?retryWrites=true&w=majority`;
+const MONGO_URL = `mongodb+srv://${MONGO_USER}:${MONGO_PASSWORD}@${MONGO_CLUSTER}/${MONGO_DBNAME}?retryWrites=true&w=majority`;
 
 const client = mongoose.connect(MONGO_URL);
 
