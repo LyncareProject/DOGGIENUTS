@@ -10,3 +10,12 @@
   cursor: pointer;
   z-index: 9999;
 }
+
+
+@media (max-width: 600px){
+  .moveToUp{
+    width: 50px;
+    right: 5px;
+    bottom: 50px;
+  }
+}

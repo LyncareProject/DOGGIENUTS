@@ -10,7 +10,6 @@ export default function MoveToUp() {
   // 어느정도 스크롤이 된건지 판단 후, 토글 여부 결정
   const handleScroll = () => {
     const { scrollY } = window;
-    console.log(scrollY);
     scrollY > 4 ? setToggleBtn(true) : setToggleBtn(false);
   };
 

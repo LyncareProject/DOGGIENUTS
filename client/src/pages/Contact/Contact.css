@@ -22,10 +22,15 @@
 .ContactBanner > h3 {
   font-size: 40px;
   margin-bottom: 20px;
+  text-shadow: 2px 2px  5px black;
 }
 .ContactBanner > p {
   font-size: 16px;
   line-height: 1.75em;
+
+}
+.ContactBanner > div{
+  text-shadow: 2px 2px  5px black;
 }
 .ContactInputWrap {
   width: calc(50%-20px);
