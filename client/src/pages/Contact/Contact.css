@@ -10,6 +10,7 @@
   justify-content: space-between;
   flex-direction: row;
   padding-top: 50px;
+  padding: 30px 16px;
 }
 
 .ContactBanner {
@@ -154,7 +155,6 @@
 }
 @media (max-width: 768px) {
   .ContactWrap {
-    padding: 30px 16px;
     flex-direction: column;
   }
   .ContactDivision {

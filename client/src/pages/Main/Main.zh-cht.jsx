@@ -22,16 +22,16 @@ import styles from "./Main.module.css";
 import { img } from "../../swiper";
 import Button from "../../components/Button/Button";
 
-export default function Main() {
-  // const downloadFileURL = (url) => {
-  //   const fileName = url.split("/").pop();
-  //   const aTag = document.createElement("a");
-  //   aTag.href = url;
-  //   aTag.setAttribute("download", fileName);
-  //   document.body.appendChild(aTag);
-  //   aTag.click();
-  //   aTag.remove();
-  // };
+export default function MainZhCht() {
+  const downloadFileURL = (url) => {
+    const fileName = url.split("/").pop();
+    const aTag = document.createElement("a");
+    aTag.href = url;
+    aTag.setAttribute("download", fileName);
+    document.body.appendChild(aTag);
+    aTag.click();
+    aTag.remove();
+  };
   return (
     <main className={styles.container}>
       <div className={styles.mainBg}>
@@ -43,7 +43,7 @@ export default function Main() {
         </div>
         <div className={styles.sectionTextBox}>
           <div className={styles.text01}>
-            <h2>Doggienuts</h2>
+            <h2>중국</h2>
             <div>
               <span>H</span>uman-grade fresh meat and organs
             </div>
@@ -228,10 +228,10 @@ export default function Main() {
             <div>the difference in effectiveness</div>
             <div>Meet the highest-spec nutritional supplements</div>
           </div>
-          {/* <Button
+          <Button
             onClick={() => downloadFileURL(PDF_FILE_URL)}
             title="產品說明書 下載"
-          /> */}
+          />
         </div>
       </div>
 

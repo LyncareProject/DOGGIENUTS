@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./Contact.css";
 import { postEmail } from "../../service/emailService";
 
-const Contact = ({ setSending }) => {
+const ContactZhCht = ({ setSending }) => {
   const [inputs, setInputs] = useState({
     Name: "",
     Phone: "",
@@ -26,12 +26,10 @@ const Contact = ({ setSending }) => {
 
   const sendBtn = async () => {
     if (!Name || !Email) {
-      return alert(
-        "Please ensure that all required fields are filled out accurately"
-      );
+      return alert("請確認是否輸入了所有必需項目。");
     }
     if (Email.match(emailRegEx) === null) {
-      return alert("Ensure that your email is entered correctly");
+      return alert("請確認是否正確輸入了電子郵件。");
     }
     setSending(true);
     await postEmail({
@@ -45,9 +43,7 @@ const Contact = ({ setSending }) => {
       sample: JSON.stringify(sample),
     }).then((response) => {
       if (response.data.message === "Success") {
-        alert(
-          "Thank you for reaching out. We'll get in touch with you at the earliest opportunity."
-        );
+        alert("感謝您的諮詢。 我們會盡快與您聯繫。");
         setInputs({
           Name: "",
           Phone: "",
@@ -60,7 +56,7 @@ const Contact = ({ setSending }) => {
       setSending(false);
     });
   };
-  const items = ["Donuts", "Chips", "Stew", "Omega 3"];
+  const items = ["甜甜圈", "脆片", "燉菜", "Omega 3"];
   const handleCheckboxChange = (event) => {
     const value = event.target.value;
     if (selectItems.includes(value)) {
@@ -69,7 +65,7 @@ const Contact = ({ setSending }) => {
       setSelectItems([...selectItems, value]);
     }
   };
-  const sampleItems = ["Donuts", "Chips", "Stew", "Omega 3"];
+  const sampleItems = ["甜甜圈", "脆片", "燉菜", "Omega 3"];
   const sampleCheckboxChange = (event) => {
     const value = event.target.value;
     if (sample.includes(value)) {
@@ -86,35 +82,35 @@ const Contact = ({ setSending }) => {
   return (
     <div className="Contact Wrap">
       <div className="ContactBanner">
-        <h3>Contact</h3>
-        <div>If you have any suggestions or any questions,</div>
-        <div>please contact us.</div>
-        <div>We are looking forward to hearing from you.</div>
+        <h3>聯繫</h3>
+        <div>如果您有任何建議或問題,</div>
+        <div>請聯繫我們。</div>
+        <div>我們期待您的來信。</div>
       </div>
       <div className="ContactWrap">
         <div className="ContactDivision">
           <div className="ContactInputSubWrap">
             <div>
               <h3 className="ContactInputTitle">
-                Name <span className="Red">*</span>
+                姓名 <span className="Red">*</span>
               </h3>
               <input
                 id="Name"
                 className="ContactInputDivision"
                 name="Name"
                 type="text"
-                placeholder="Name"
+                placeholder="姓名"
                 onChange={handleInput}
                 value={Name}
               />
             </div>
             <div>
-              <h3 className="ContactInputTitle">Phone</h3>
+              <h3 className="ContactInputTitle">電話號碼</h3>
               <input
                 className="ContactInputDivision"
                 name="Phone"
                 type="text"
-                placeholder="Phone"
+                placeholder="電話號碼"
                 onChange={handleInput}
                 value={Phone}
               />
@@ -122,35 +118,35 @@ const Contact = ({ setSending }) => {
           </div>
           <div className="ContactInputWrap">
             <h3 className="ContactInputTitle">
-              Email <span className="Red">*</span>
+              電子郵箱 <span className="Red">*</span>
             </h3>
             <input
               className="ContactInput"
               type="text"
               name="Email"
-              placeholder="Email"
+              placeholder="電子郵箱"
               onChange={handleInput}
               value={Email}
             />
           </div>
           <div className="ContactInputWrap">
-            <h3 className="ContactInputTitle">Company</h3>
+            <h3 className="ContactInputTitle">公司</h3>
             <input
               className="ContactInput"
               type="text"
               name="Company"
-              placeholder="Company"
+              placeholder="公司"
               onChange={handleInput}
               value={Company}
             />
           </div>
           <div className="ContactInputWrap">
-            <h3 className="ContactInputTitle">Country</h3>
+            <h3 className="ContactInputTitle">國家</h3>
             <input
               className="ContactInput"
               type="text"
               name="Country"
-              placeholder="Country"
+              placeholder="國家"
               onChange={handleInput}
               value={Country}
             />
@@ -158,7 +154,7 @@ const Contact = ({ setSending }) => {
         </div>
 
         <div className="ContactDivision">
-          <h3 className="ContactInputTitle">Product of Interest (Multiple)</h3>
+          <h3 className="ContactInputTitle">感興趣的產品(多個)</h3>
           <div className="ContactSelectWrap">
             {items.map((item) => (
               <div className="CheckboxWrap">
@@ -172,7 +168,7 @@ const Contact = ({ setSending }) => {
               </div>
             ))}
           </div>
-          <h3 className="ContactInputTitle">Sample of Interest (Multiple)</h3>
+          <h3 className="ContactInputTitle">感興趣的樣品(多個)</h3>
           <div className="ContactSelectWrap">
             {sampleItems.map((sampleItems) => (
               <div className="CheckboxWrap">
@@ -187,27 +183,27 @@ const Contact = ({ setSending }) => {
             ))}
           </div>
           <div className="ContactInputWrap">
-            <h3 className="ContactInputTitle">Text Area</h3>
+            <h3 className="ContactInputTitle">咨詢內容</h3>
             <textarea
               className="ContactTextArea"
               name="TextArea"
               id=""
               cols="30"
               rows="10"
-              placeholder="Sample Request
-- Minimum of 1 box per sample
-- a shipping fee
-- Wholesale supply price "
+              placeholder="申請樣品時:
+- 每個樣品至少購買1箱
+- 運費另算
+- 提供批發價 "
               onChange={handleInput}
               value={TextArea}
             ></textarea>
           </div>
           <button className="SendBtn" onClick={sendBtn}>
-            Send
+            發送
           </button>
         </div>
       </div>
     </div>
   );
 };
-export default Contact;
+export default ContactZhCht;
