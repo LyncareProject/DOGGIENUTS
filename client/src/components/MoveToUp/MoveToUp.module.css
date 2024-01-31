@@ -4,11 +4,12 @@
 .moveToUp {
   position: absolute;
   position: fixed;
-  width: 120px;
-  bottom: 35px;
-  right: 170px;
+  width: 80px;
+  bottom: 220px;
+  right: 55px;
   cursor: pointer;
   z-index: 9999;
+
 }
 
 
