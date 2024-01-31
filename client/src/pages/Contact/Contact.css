@@ -27,10 +27,8 @@
 .ContactBanner > p {
   font-size: 16px;
   line-height: 1.75em;
-
-}
-.ContactBanner > div{
-  text-shadow: 2px 2px  5px black;
+  color: #fff;
+  text-shadow: 5px 5px  10px black;
 }
 .ContactInputWrap {
   width: calc(50%-20px);

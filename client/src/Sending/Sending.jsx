@@ -1,6 +1,6 @@
 import "./Sending.css";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 const Sending = ({ sending }) => {
   return (

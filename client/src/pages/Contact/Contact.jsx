@@ -20,9 +20,21 @@ const Contact = ({ setSending }) => {
       [e.target.name]: e.target.value,
     });
   };
+
+  const emailRegEx =
+    /^[A-Za-z0-9]([-_.]?[A-Za-z0-9])*@[A-Za-z0-9]([-_.]?[A-Za-z0-9])*\.[A-Za-z]{2,3}$/i;
+  const emailCheck = (Email) => {
+    return emailRegEx.test(Email);
+  };
+
   const sendBtn = async () => {
     if (!Name || !Email) {
-      return alert("please write everything");
+      return alert(
+        "Please ensure that all required fields are filled out accurately"
+      );
+    }
+    if (Email.match(emailRegEx) === null) {
+      return alert("Ensure that your email is entered correctly");
     }
     setSending(true);
     await postEmail({
@@ -36,7 +48,9 @@ const Contact = ({ setSending }) => {
       sample: JSON.stringify(sample),
     }).then((response) => {
       if (response.data.message === "Success") {
-        alert("Complete");
+        alert(
+          "Thank you for reaching out. We'll get in touch with you at the earliest opportunity."
+        );
         setInputs({
           Name: "",
           Phone: "",
