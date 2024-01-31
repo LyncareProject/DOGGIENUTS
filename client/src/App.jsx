@@ -17,6 +17,7 @@ import FooterChn from "./components/Footer/Footer.zh-cht";
 import ContactChn from "./pages/Contact/Contact.zh-cht";
 import MainZhCht from "./pages/Main/Main.zh-cht";
 import ContactZhCht from "./pages/Contact/Contact.zh-cht";
+import AboutUsZhCht from "./pages/AboutUs/AboutUs.zh-cht";
 import ContactBarZhCht from "./components/ContactBar/ContactBar.zh-cht";
 // import Header from "./components/Header/Header";
 
@@ -60,6 +61,7 @@ function App() {
         </Route>
         <Route element={<LayoutChina />}>
           <Route path="/zh-cht" element={<MainZhCht />} />
+          <Route path="/zh-cht/about-us" element={<AboutUsZhCht />} />
           <Route path="/zh-cht/contact" element={<ContactZhCht />} />
         </Route>
       </Routes>

@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { PDF_FILE_URL } from "../../service/fileService";
 import "swiper/css";
 import "swiper/css/autoplay";
-import mainBg from "../../assets/img/mainBg.png";
+import mainBg from "../../assets/img/CN_main1.png";
 import yellow from "../../assets/img/yellow.png";
 import yellowFlip from "../../assets/img/yellowFlip.png";
 import yellowStick from "../../assets/img/yellowStick.png";
@@ -43,27 +43,30 @@ export default function MainZhCht() {
         </div>
         <div className={styles.sectionTextBox}>
           <div className={styles.text01}>
-            <h2>중국</h2>
+            <h2>我們品牌的代表產品是 <span>“跳舞的狗狗甜甜圈”。</span></h2>
+            <h2><span>Dancing Doggienuts</span></h2>
             <div>
-              <span>H</span>uman-grade fresh meat and organs
+              我們使用人類食用級別的新鮮肉類和內臟，
             </div>
             <div>
-              <span>P</span>roprietary vitamin and mineral additions
+              添加特有的維生素和礦物質，
             </div>
             <div>
-              <span>S</span>emi-moist formulation with high moisture content
+              含有高水分的半濕配方，
             </div>
             <div>
-              <span>C</span>omplete nutritional balance with over 40 essential
-              nutrients
+               含有40多種必需營養素，營養全面均衡，
             </div>
             <div>
-              <span>C</span>ooked at temperatures below 80 degrees to minimize
-              nutrient loss
+              在低於80攝氏度的溫度下烹煮，最大程度地減少了
             </div>
             <div>
-              <span>A</span>natural diet that can be fed as a staple food
+              寵物食品的營養損失，
             </div>
+            <div>
+              是可以作為主食的營養食品。
+            </div>
+            <div><h2>我們的主要產品是：狗狗甜甜圈，狗狗甜甜圈 脆片，狗狗甜甜圈 燉菜</h2></div>
             <div className={styles.yellow}>
               <img src={yellow} alt="" />
             </div>

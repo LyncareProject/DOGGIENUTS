@@ -46,6 +46,7 @@
     
     box-shadow: 1px 1px 1px black;
 }
+
 .ContactBar p:hover,
 .ContactBar p:active {
   transition: background-color 0.1s linear, border-color 0.1s linear,
@@ -63,6 +64,12 @@
     color 0.1s linear;
   cursor: pointer;
 }
+
+.CN_ContactBar_1{
+  text-align: center;
+  text-indent: -7px;
+}
+
 
 @media (max-width: 600px) {
   .ContactBar {
