@@ -1,5 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+.Red {
+  color: red;
+}
+
 .ContactWrap {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -9,41 +15,26 @@
 .ContactBanner {
   width: 100%;
   background-image: url("../../assets/img/doggienuts.jpeg");
-  background-position: 50%;
+  background-position: 30% 20%;
   padding: 50px 30px;
   color: #fff;
-  box-sizing: border-box;
-  color: #231e20;
 }
 .ContactBanner > h3 {
   font-size: 40px;
   margin-bottom: 20px;
 }
 .ContactBanner > p {
-  width: 70%;
   font-size: 16px;
   line-height: 1.75em;
-  color: #fff;
-  text-shadow: 5px 5px  10px black;
 }
 .ContactInputWrap {
-  width: 100%;
+  width: calc(50%-20px);
   margin-bottom: 30px;
-  box-sizing: border-box;
-}
-.ContactInputWrap_2{
-  display: block;
-  width: 100%;
-  margin-top: -23px;
-}
-.ContactInputWrap_2 textarea{
-  display: block;
-  width: 100%;
 }
 
 .ContactDivision {
-  display: block;
   width: calc(50% - 20px);
+  display: inline;
 }
 .ContactInputTitle {
   margin-bottom: 20px;
@@ -54,26 +45,26 @@
   justify-content: space-between;
   flex-direction: row;
   margin-bottom: 30px;
+  gap: 50px;
 }
 .ContactInputSubWrap > div {
-  width: calc(50% - 20px);
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: column;
   align-items: flex-start;
 }
-.ContactInputSubWrap > div > input {
+/* .ContactInputSubWrap > div > input {
   width: 100%;
-}
+} */
 
 .ContactInputDivision {
-  width: calc(50% - 20px);
+  width: 100%;
   border: 1px solid #777;
   background-color: #ededed;
   border-radius: 5px;
   padding: 7px 15px;
   font-size: 16px;
-  box-sizing: border-box;
 }
 .ContactInput {
   width: 100%;
@@ -82,20 +73,17 @@
   border-radius: 5px;
   padding: 7px 15px;
   font-size: 16px;
-  box-sizing: border-box;
-
 }
 .ContactTextArea {
   width: 100%;
-  height: 382px;
-  max-height: 382px;
+  height: 258px;
+  max-height: 158px;
   border: 1px solid #777;
   background-color: #ededed;
   border-radius: 5px;
   padding: 7px 15px;
   font-size: 16px;
   resize: none;
-  box-sizing: border-box;
 }
 .SendBtn {
   float: right;
@@ -105,8 +93,6 @@
   border-radius: 5px;
   padding: 7px 15px;
   font-size: 16px;
-  margin-bottom: 30px;
-
 }
 .SendBtn:hover {
   opacity: 0.8;
@@ -121,6 +107,17 @@
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 10px;
+}
+
+.ContactSelectWrap {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ededed;
+  border: 1px solid #777;
+  padding: 7px 15px;
+  width: calc(50%-20px);
+  font-size: 16px;
+  border-radius: 5px;
 }
 
 @media (max-width: 939px) {
@@ -151,7 +148,6 @@
 }
 @media (max-width: 768px) {
   .ContactWrap {
-    box-sizing: border-box;
     padding: 30px 16px;
     flex-direction: column;
   }
@@ -167,9 +163,17 @@
 }
 .Wrap {
   width: 100%;
-  max-width: 1100px;
+  max-width: 980px;
   padding-left: 20px;
   padding-right: 20px;
-  margin: 0 auto;
   box-sizing: border-box;
+  margin: 0 auto;
+}
+
+@media (max-width: 450px) {
+  .ContactInputSubWrap {
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+  }
 }

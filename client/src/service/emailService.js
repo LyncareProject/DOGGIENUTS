@@ -8,6 +8,8 @@ export const postEmail = ({
   email,
   company,
   country,
+  selectItems,
+  sample,
   products,
 }) => {
   return axios.post(SERVER_URL + "/email", {
@@ -16,6 +18,10 @@ export const postEmail = ({
     email,
     company,
     country,
+    selectItems,
+    sample,
     products,
   });
 };
+
+// axios.get(SERVER_URL + "/email", { myError });
