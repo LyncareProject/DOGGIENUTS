@@ -4,7 +4,7 @@ import Footer_logo from "./../../assets/img/Footer_logo.jpg";
 
 import "./Footer.css";
 
-const Footer = () => {
+const FooterChnZhCht = () => {
   return (
     <div className="Footer">
       <div className="Footer_address">
@@ -18,23 +18,19 @@ const Footer = () => {
         <p className="Footer_border"> </p>
 
         <div className="Footer_flex1">
-          <p>
-            Commercial Representative : Alex Kim, David So(Head of Overseas
-            Business)
-          </p>
-          <p>E-mail : marketing@wevibe.co.kr </p>
+          <p>代表：金鍾植、蘇章永(海外事業本部長)</p>
+          <p>電子郵箱：marketing@wevibe.co.kr</p>
         </div>
         <div className="Footer_flex2">
           <p>
-            Address : 67, Gasan digital 2-ro, Geumcheon-gu, Seoul, Republic of
-            Korea
+            地址：67, Gasan digital 2-ro, Geumcheon-gu, Seoul, Republic of Korea
           </p>
         </div>
 
-        <p>(C) wevibe Inc. All Rights Reserved</p>
+        <p>(C) wevibe Inc. 版權所有</p>
       </div>
     </div>
   );
 };
 
-export default Footer;
+export default FooterChnZhCht;

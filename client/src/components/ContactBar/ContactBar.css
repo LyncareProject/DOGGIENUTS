@@ -1,87 +1,83 @@
-
-
 .uRvRjQ.Qkd66A {
-    transition: background-color .1s linear,border-color .1s linear,color .1s linear;
+  transition: background-color 0.1s linear, border-color 0.1s linear,
+    color 0.1s linear;
 
-    background-color: #8b3dff;
-    color: white;
+  background-color: #8b3dff;
+  color: white;
 }
-.ContactBar{
-    position: fixed;
-    display: block;
-    bottom: 156px;
-    right: 33px;
-    z-index: 1000;
+.ContactBar {
+  position: fixed;
+  display: block;
+  bottom: 156px;
+  right: 33px;
+  z-index: 1000;
 }
-.dog1{
-    position: fixed;
-    width: 120px;
-    bottom: 50px;
-    right: 25px;
+.dog1 {
+  position: fixed;
+  width: 120px;
+  bottom: 50px;
+  right: 25px;
 }
-
 
 .ContactBar_1:hover,
 .ContactBar p:hover,
 .ContactBar span:hover,
-.ContactBar span:hover{
-    color: #fff;
-    cursor: pointer;
-    -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    -ms-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    transition: all 0.4s; opacity: 1;
-    transition: all 0.5s;
-  }
+.ContactBar span:hover {
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  opacity: 1;
+  transition: all 0.5s;
+}
 
+.ContactBar p {
+  display: block;
+  width: 100px;
+  background-color: #8b3dff;
+  padding: 10px 5px 10px 15px;
+  border-radius: 15px;
 
-
-
-.ContactBar p{
-    display: block;
-    width: 100px;
-    background-color: #8b3dff;
-    padding: 10px 5px 10px 15px;
-    border-radius: 15px;
-    
-    box-shadow: 1px 1px 1px black;
+  box-shadow: 1px 1px 1px black;
 }
 .ContactBar p:hover,
-.ContactBar p:active{
-    transition: background-color .1s linear,border-color .1s linear,color .1s linear;
-    cursor: pointer;
+.ContactBar p:active {
+  transition: background-color 0.1s linear, border-color 0.1s linear,
+    color 0.1s linear;
+  cursor: pointer;
 }
-.ContactBar span{
-    display: block;
-    color: white;
+.ContactBar span {
+  display: block;
+  color: white;
 }
 
 .ContactBar span:hover,
-.ContactBar span:active{
-    transition: background-color .1s linear,border-color .1s linear,color .1s linear;
-    cursor: pointer;
+.ContactBar span:active {
+  transition: background-color 0.1s linear, border-color 0.1s linear,
+    color 0.1s linear;
+  cursor: pointer;
 }
 
-
 @media (max-width: 600px) {
-    .ContactBar{
-        width: 100%;
-        bottom: 0;
-        left: 0;
-        
-    }
-    .ContactBar .ContactBar_1{
-        width: 100%;
-        left: 0;
-        text-align: center;
-        margin: 0;
-        box-sizing: border-box;
-        border-radius: 0px;
-    }
-    .dog1{
-        width: 30px;
-        bottom: 6px;
-        right: 10px;
-    }
+  .ContactBar {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+  .ContactBar .ContactBar_1 {
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 0px;
+  }
+  .dog1 {
+    width: 30px;
+    bottom: 6px;
+    right: 10px;
+  }
 }
