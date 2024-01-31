@@ -18,14 +18,17 @@ import ContactChn from "./pages/Contact/Contact.zh-cht";
 import MainZhCht from "./pages/Main/Main.zh-cht";
 import ContactZhCht from "./pages/Contact/Contact.zh-cht";
 import ContactBarZhCht from "./components/ContactBar/ContactBar.zh-cht";
+import SidebarZhCht from "./components/Sidebar/Sidebar.zh-cht";
 // import Header from "./components/Header/Header";
 
 function App() {
   const [sending, setSending] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const Layout = () => {
     return (
       <div>
+        <Sidebar />
         <ContactBar />
         <Header />
         <Outlet />
@@ -36,6 +39,7 @@ function App() {
   const LayoutChina = () => {
     return (
       <div>
+        <SidebarZhCht />
         <ContactBarZhCht />
         <HeaderChn />
         <Outlet />
@@ -45,8 +49,6 @@ function App() {
   };
   return (
     <div>
-      <Sidebar />
-
       <MoveToUp />
       <Sending sending={sending} />
       <Routes>

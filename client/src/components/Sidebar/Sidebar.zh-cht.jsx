@@ -4,7 +4,7 @@ import hamburgerIcon from "./../../assets/img/hamburgermenu.png";
 import closeIcon from "./../../assets/img/x_close_icon.png";
 import "./Sidebar.css";
 
-function Sidebar() {
+function SidebarZhCht() {
   const [isOpen, setIsOpen] = useState(false);
   const sidebarRef = useRef();
 
@@ -39,16 +39,17 @@ function Sidebar() {
         <div className="nav_link">
           {/* <Link to="/" onClick={closeSidebar}><p>홈</p></Link> */}
           <Link to="/" onClick={closeSidebar}>
-            <p>HOME</p>
+            <p>首頁</p>
           </Link>
-          <Link to="/AboutUs" onClick={closeSidebar}>
-            <p>ABOUT US</p>
+          <Link to="/about-us" onClick={closeSidebar}>
+            <p>關於我們</p>
           </Link>
-          <Link to="/Contact" onClick={closeSidebar}>
-            <p>CONTACT</p>
+          <Link to="/contact" onClick={closeSidebar}>
+            <p>聯繫</p>
           </Link>
+
           <Link to="/">
-            <p className="selectLang">🇨🇳 華語(繁體)</p>
+            <p className="selectLang">🇺🇸 ENGLISH</p>
           </Link>
         </div>
       )}
@@ -56,4 +57,4 @@ function Sidebar() {
   );
 }
 
-export default Sidebar;
+export default SidebarZhCht;

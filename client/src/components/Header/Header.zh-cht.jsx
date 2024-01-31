@@ -13,23 +13,29 @@ const HeaderZhCht = () => {
       <nav className="gnb_nav">
         <ul>
           <li className="dep1">
-            <Link to="/chn">
+            <Link to="/zh-cht">
               <span>首頁</span>
             </Link>
           </li>
 
           <li className="dep1">
-            <Link to="/chn/about-us">
+            <Link to="/zh-cht/about-us">
               <span>關於我們</span>
             </Link>
           </li>
 
           <li className="dep1">
-            <Link to="/chn/contact">
+            <Link to="/zh-cht/contact">
               <span>聯繫</span>
             </Link>
           </li>
+          <li className="selectLang">
+            <Link to="/">
+              <span>🇺🇸 ENGLISH</span>
+            </Link>
+          </li>
         </ul>
+
         <p className="N_bg"></p>
       </nav>
     </div>
