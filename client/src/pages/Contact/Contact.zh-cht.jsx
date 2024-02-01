@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Contact.css";
-import { postEmail } from "../../service/emailService";
+import { postEmailZhCht } from "../../service/emailService";
 
 const ContactZhCht = ({ setSending }) => {
   const [inputs, setInputs] = useState({
@@ -24,7 +24,7 @@ const ContactZhCht = ({ setSending }) => {
   const emailRegEx =
     /^[A-Za-z0-9]([-_.]?[A-Za-z0-9])*@[A-Za-z0-9]([-_.]?[A-Za-z0-9])*\.[A-Za-z]{2,3}$/i;
 
-  const sendBtn = async () => {
+  const sendBtn1 = async () => {
     if (!Name || !Email) {
       return alert("請確認是否輸入了所有必需項目。");
     }
@@ -32,7 +32,7 @@ const ContactZhCht = ({ setSending }) => {
       return alert("請確認是否正確輸入了電子郵件。");
     }
     setSending(true);
-    await postEmail({
+    await postEmailZhCht({
       name: Name,
       phone: Phone,
       email: Email,
@@ -198,7 +198,7 @@ const ContactZhCht = ({ setSending }) => {
               value={TextArea}
             ></textarea>
           </div>
-          <button className="SendBtn" onClick={sendBtn}>
+          <button className="SendBtn" onClick={sendBtn1}>
             發送
           </button>
         </div>

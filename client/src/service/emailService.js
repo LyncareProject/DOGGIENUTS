@@ -23,3 +23,5 @@ export const postEmail = ({
     products,
   });
 };
+
+// axios.get(SERVER_URL + "/email", { myError });
