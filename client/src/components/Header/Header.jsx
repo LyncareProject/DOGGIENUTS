@@ -29,6 +29,11 @@ const Header = () => {
               <span>CONTACT</span>
             </Link>
           </li>
+          <li className="selectLang">
+            <Link to="/zh-cht">
+              <span>🇨🇳 華語(繁體)</span>
+            </Link>
+          </li>
         </ul>
         <p className="N_bg"></p>
       </nav>

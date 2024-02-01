@@ -29,7 +29,13 @@ const HeaderZhCht = () => {
               <span>聯繫</span>
             </Link>
           </li>
+          <li className="selectLang">
+            <Link to="/">
+              <span>🇺🇸 ENGLISH</span>
+            </Link>
+          </li>
         </ul>
+
         <p className="N_bg"></p>
       </nav>
     </div>
