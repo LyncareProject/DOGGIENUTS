@@ -410,8 +410,8 @@
 
 
 .ZhChttext03{
-  text-shadow: -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white;
-
+  text-shadow: -1px 0px #eee, 0px 1px #eee, 1px 0px #eee, 0px -1px #eee;
+  font-size: 17px;
 }
 
 .PdfButton{
@@ -427,9 +427,6 @@
   margin-top: -18px;
 }
 
-.ZhChttext06 p{
- 
-}
 
 .ZhChttext08 div{
   width: 563px;
