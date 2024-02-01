@@ -69,36 +69,36 @@ const AboutUsZhCht = () => {
 
           <ul className="seciton_3Text">
             <li>
-              2016.05 &nbsp; Doggienuts Brand Planning Selected and awarded at
-              the Naver Entrepreneurial Idea Competition
+              2016.05 &nbsp; 狗狗甜甜圈品牌企劃，NAVER創業項目競賽提拔及獲獎
             </li>
             <li>
-              2017.02 &nbsp; Launch of <span>'Dancing Doggienuts,'</span> a
-              specialized natural pet food brand
+              2017.02 &nbsp; 寵物自然食品專業品牌
+              <span>"跳舞的狗狗甜甜圈"</span>
+              上市
             </li>
             <li>
-              2017.03 &nbsp; Release of the unprecedented natural donut{" "}
-              <span>'Doggienuts'</span> and commencement of online and offline
-              sales
+              2017.03 &nbsp; 世界上獨一無二的自然甜甜圈
+              <span>"狗狗甜甜圈"</span>面世，開始線上、線下銷售
             </li>
-            <li>2017.05 &nbsp; Introduction of 'Doggienuts' cheese line</li>
+            <li>2017.05 &nbsp; "狗狗甜甜圈"芝士系列上市</li>
             <li>
-              2018.01 &nbsp; Release of <span>'Doggienuts Chips,'</span> a chewy
-              and Hard dry form of natural dog treats
-            </li>
-            <li>
-              2020.06 &nbsp; Launch of the industry's first insect protein
-              natural dog treats, <span>'Buggienuts'</span> (Achieved highest
-              single-brand sales at Lotte Department Store Pet Section).
+              2018.01 &nbsp; 耐嚼、堅韌的乾式形態的自然食品
+              <span>"狗狗甜甜圈 脆片"</span>面世
             </li>
             <li>
-              2021.02 &nbsp; Lotte Department Store X Dognut collaboration
-              event; Lotte ON Mall's entire menu sells out early
+              2020.06 &nbsp; 業界首次推出昆蟲蛋白質自然食
+              <span>"蟲肉甜甜圈"</span>
+              (樂天百貨店寵物單一品牌達成一天最高銷售額)
             </li>
             <li>
-              2022.11 &nbsp; Release of new menu <span>'Doggienut Stew'</span>
-              (1st place in the <span>'New Product of the Year'</span> category
-              at the 2022 K Pet Fair Mega Show)
+              2021.02 &nbsp; 樂天百貨商店 X
+              狗狗甜甜圈合作活動進行，樂天ON商城所有菜單提前售罄
+            </li>
+            <li>
+              2022.11 &nbsp; <span>狗狗甜甜圈新菜品， 推出擠着吃的燉菜</span>
+              上市 (2022 K-Pet Fair Megazoo 新產品發佈會 食品部門
+              <span>"年度新產品獎"</span>
+              獲得第一名)
             </li>
           </ul>
         </div>
