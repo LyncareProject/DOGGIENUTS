@@ -7,7 +7,7 @@ import Logo from "./../../assets/img/Doggilogo.jpg";
 const HeaderZhCht = () => {
   return (
     <div className="Header">
-      <Link to="/chn" className="H_logo">
+      <Link to="/zh-cht" className="H_logo">
         <img src={Logo} alt="lyncarelogo" />
       </Link>
       <nav className="gnb_nav">
