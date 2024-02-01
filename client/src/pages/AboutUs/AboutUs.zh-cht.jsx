@@ -13,7 +13,7 @@ import Currentsituation_bg2 from "./../../assets/img/AboutUs/Currentsituation_bg
 import open_bracket from "./../../assets/img/AboutUs/open_bracket.png";
 import close_bracket from "./../../assets/img/AboutUs/close_bracket.png";
 
-const AboutUs = () => {
+const AboutUsZhCht = () => {
   return (
     <div className="wrap">
       <div className="flex__1">
@@ -27,13 +27,12 @@ const AboutUs = () => {
             <img src={open_bracket} alt="open_bracket" />
           </p>
           <div className="section__1Text">
-            <h3>DOGGIENUTS HEALTH & NUTRITON Co.,LTD. </h3>
+            <h3>【株】狗狗甜甜圈-健康&營養 </h3>
             <hr></hr>
             <p>
-              We offer a{" "}
-              <span>total solution for your pet’s health and nutrition</span>{" "}
-              with naturally balanced foods to help your pet live a long,
-              healthy life with your family
+              我們通過使用來自大自然的營養均衡食品， 實現寵物的健康和營養，
+              讓寵物與家人一起健康長壽，
+              我們提供寵物的健康和營養的整體解決方案。
             </p>
           </div>
           <p className="WEARE">
@@ -51,9 +50,9 @@ const AboutUs = () => {
         </p>
         <div>
           <p className="seciton_2Text">
-            <span>Doggienuts Stew</span> was awarded 1st place for “New Product
-            of the Year” at the K-PET FAIR, the largest pet fair in Korea. this
-            was a significant achievement based solely on consumer votes.
+            <span>狗狗甜甜圈 燉菜</span> 在韓國最大的寵物展 K-PET
+            FAIR榮獲“年度新產品”第一名。
+            這是一項完全由消費者投票決定的具有重大意義的獎項。
           </p>
           <p className="close_bracket">
             <img src={close_bracket} alt="close_bracket" />
@@ -113,20 +112,25 @@ const AboutUs = () => {
         <div className="section_4flex">
           <div className="section_4_1">
             <p className="text_left">
-              1st Doginut Lab in Hanam-city <br />
-              Operation of 2nd Doginut Lab
+              京畿道河南市第一狗狗甜甜圈LAB
+              <br />
+              第二狗狗甜甜圈LAB
             </p>
             <p className="Currentsituation_bg1">
               <img src={Currentsituation_bg1} alt="Currentsituation_bg1" />
             </p>
           </div>
           <div className="section_4_2">
-            <p className="textRight">
-              Freezer Warehouse
+            <p className="text_right">
+              第一冷凍庫
               <br />
-              second Freezer Warehouse
+              第二冷凍庫
               <br />
-              Cold Storage
+              冷藏倉庫
+              <br />
+              <br />
+              <br />
+              直接進口肉類, 使用新鮮肉味
             </p>
             <p className="Currentsituation_bg2">
               <img src={Currentsituation_bg2} alt="Currentsituation_bg2" />
@@ -138,4 +142,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default AboutUsZhCht;

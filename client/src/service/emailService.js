@@ -24,4 +24,26 @@ export const postEmail = ({
   });
 };
 
+export const postEmailZhCht = ({
+  name,
+  phone,
+  email,
+  company,
+  country,
+  selectItems,
+  sample,
+  products,
+}) => {
+  return axios.post(SERVER_URL + "/emailZhCht", {
+    name,
+    phone,
+    email,
+    company,
+    country,
+    selectItems,
+    sample,
+    products,
+  });
+};
+
 // axios.get(SERVER_URL + "/email", { myError });

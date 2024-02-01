@@ -19,11 +19,11 @@ import MainZhCht from "./pages/Main/Main.zh-cht";
 import ContactZhCht from "./pages/Contact/Contact.zh-cht";
 import ContactBarZhCht from "./components/ContactBar/ContactBar.zh-cht";
 import SidebarZhCht from "./components/Sidebar/Sidebar.zh-cht";
+import AboutUsZhCht from "./pages/AboutUs/AboutUs.zh-cht";
 // import Header from "./components/Header/Header";
 
 function App() {
   const [sending, setSending] = useState(false);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const Layout = () => {
     return (
@@ -62,7 +62,11 @@ function App() {
         </Route>
         <Route element={<LayoutChina />}>
           <Route path="/zh-cht" element={<MainZhCht />} />
-          <Route path="/zh-cht/contact" element={<ContactZhCht />} />
+          <Route path="/zh-cht/about-us" element={<AboutUsZhCht />} />
+          <Route
+            path="/zh-cht/contact"
+            element={<ContactZhCht setSending={setSending} />}
+          />
         </Route>
       </Routes>
     </div>
