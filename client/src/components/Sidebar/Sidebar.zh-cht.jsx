@@ -38,13 +38,13 @@ function SidebarZhCht() {
       {isOpen && (
         <div className="nav_link">
           {/* <Link to="/" onClick={closeSidebar}><p>홈</p></Link> */}
-          <Link to="/" onClick={closeSidebar}>
+          <Link to="/zh-cht" onClick={closeSidebar}>
             <p>首頁</p>
           </Link>
-          <Link to="/about-us" onClick={closeSidebar}>
+          <Link to="/zh-cht/about-us" onClick={closeSidebar}>
             <p>關於我們</p>
           </Link>
-          <Link to="/contact" onClick={closeSidebar}>
+          <Link to="/zh-cht/contact" onClick={closeSidebar}>
             <p>聯繫</p>
           </Link>
 

@@ -1,3 +1,20 @@
+@font-face {
+  font-family: "Pretendard";
+  src: url("./../../assets/font/Pretendard-Medium.woff2"),
+    url("./../../assets/font/Pretendard-Medium.woff") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard-Blod";
+  src: url("./../../assets/font/Pretendard-Bold.woff"),
+    url("./../../assets/font/Pretendard-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
 * {
   box-sizing: border-box;
 }

@@ -8,15 +8,15 @@
 .ContactBar {
   position: fixed;
   display: block;
-  bottom: 156px;
-  right: 33px;
+  bottom: 115px;
+  right: 13px;
   z-index: 1000;
 }
 .dog1 {
   position: fixed;
   width: 120px;
-  bottom: 50px;
-  right: 25px;
+  bottom: 10px;
+  right: 11px;
 }
 
 .ContactBar_1:hover,
@@ -65,19 +65,19 @@
   cursor: pointer;
 }
 
-.CN_ContactBar_1{
+.CN_ContactBar_1 {
   text-align: center;
   text-indent: -7px;
 }
 
 
 @media (max-width: 600px) {
-  .ContactBar {
+  .ContactBar{
     width: 100%;
     bottom: 0;
     left: 0;
   }
-  .ContactBar .ContactBar_1 {
+  .ContactBar .ContactBar_1 ,  .ContactBar .CN_ContactBar_1 {
     width: 100%;
     left: 0;
     text-align: center;
@@ -87,7 +87,7 @@
   }
   .dog1 {
     width: 30px;
-    bottom: 6px;
+    bottom: 3px;
     right: 10px;
   }
 }

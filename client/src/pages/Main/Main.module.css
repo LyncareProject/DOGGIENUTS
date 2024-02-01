@@ -403,6 +403,42 @@
   z-index: 100 important;
 }
 
+
+
+
+/* ZhCht */
+
+
+.ZhChttext03{
+  text-shadow: -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white;
+
+}
+
+.PdfButton{
+  display: block;
+  margin: 0 auto;
+  margin-top: 17px;
+  margin-bottom: -10px;
+  padding: 10px 15px;
+   
+}
+
+.ZhChttext06 {
+  margin-top: -18px;
+}
+
+.ZhChttext06 p{
+ 
+}
+
+.ZhChttext08 div{
+  width: 563px;
+}
+
+.ZhChttext09{
+  font-size: 27.5px;
+}
+
 @media screen and (max-width: 1000px) {
   .text03 h2 {
     margin-left: 0px;

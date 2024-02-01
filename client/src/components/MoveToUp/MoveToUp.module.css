@@ -5,8 +5,8 @@
   position: absolute;
   position: fixed;
   width: 80px;
-  bottom: 220px;
-  right: 55px;
+  bottom:170px;
+  right: 32px;
   cursor: pointer;
   z-index: 9999;
 
@@ -17,6 +17,6 @@
   .moveToUp{
     width: 50px;
     right: 5px;
-    bottom: 50px;
+    bottom: 40px;
   }
 }

@@ -41,13 +41,13 @@ function Sidebar() {
           <Link to="/" onClick={closeSidebar}>
             <p>HOME</p>
           </Link>
-          <Link to="/AboutUs" onClick={closeSidebar}>
+          <Link to="/about-us" onClick={closeSidebar}>
             <p>ABOUT US</p>
           </Link>
-          <Link to="/Contact" onClick={closeSidebar}>
+          <Link to="/contact" onClick={closeSidebar}>
             <p>CONTACT</p>
           </Link>
-          <Link to="/">
+          <Link to="/zh-cht">
             <p className="selectLang">🇨🇳 華語(繁體)</p>
           </Link>
         </div>
