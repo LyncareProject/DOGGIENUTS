@@ -63,6 +63,7 @@ function App() {
         </Route>
         <Route element={<LayoutChina />}>
           <Route path="/zh-cht" element={<MainZhCht />} />
+          <Route path="/zh-cht/about-us" element={<AboutUsZhCht />} />
           <Route path="/zh-cht/contact" element={<ContactZhCht />} />
         </Route>
       </Routes>

@@ -81,12 +81,10 @@ export default function MainZhCht() {
         <div className={styles.sectionTextBox}>
           <div className={styles.text02}>
             <h2>
-              <span>D</span>OGGIENUTS
+              <span>D</span>OGGIENUTS <span>狗</span>狗甜甜圈
             </h2>
             <div>
-              Doggienut is an all-natural pet food brand that offers one of the
-              most diverse sources of single proteins in korea. We make our
-              porducts with a whopping 14 different single proteins.{" "}
+            跳舞的甜甜圈是韓國提供最多單一蛋白質的自然食品品牌。{" "}
             </div>
             <div>
               Chicken, duck, beef, salmon, kangaroo, turkey, deer, and rabbit,
