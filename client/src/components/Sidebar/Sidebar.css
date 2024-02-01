@@ -14,7 +14,7 @@
   transform-origin: translate(0%, 0%);
   background-color: #fff;
   border: 0;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .sidebar-content {
@@ -39,6 +39,7 @@
 .sidebar-button img {
   display: block;
   width: 55px;
+  z-index: 10000;
 }
 
 .nav_link {
