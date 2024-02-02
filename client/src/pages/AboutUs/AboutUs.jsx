@@ -62,15 +62,10 @@ const AboutUs = () => {
                 <img className="" src={close_bracketLeft} alt="close_bracketLeft" />
               </p>
           </div>
-      
         </div>    
-      
-
-       
         <div className="section_OfficialsImg">
           <p><img src={OfficialsImg} alt="DOGGIENUTS Certification datas" /></p>
         </div>
-
       </div>
 
 
