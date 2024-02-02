@@ -1,3 +1,4 @@
-const SERVER_URL = `/api`;
+const SERVER_URL = `${url}/api`;
+const url = window.location.origin;
 
 export default SERVER_URL;

@@ -21,7 +21,6 @@ import section08 from "../../assets/img/section08.png";
 import styles from "./Main.module.css";
 import { img } from "../../swiper";
 import Button from "../../components/Button/Button";
-import axios from "axios";
 
 export default function MainZhCht() {
   const downloadFileURL = (url) => {
@@ -31,7 +30,7 @@ export default function MainZhCht() {
         const blobURL = window.URL.createObjectURL(new Blob([blob]));
         const fileName = url.split("/").pop();
         const aTag = document.createElement("a");
-        aTag.href = blobURL;
+        aTag.href = `${blobURL}/pdf/`;
         aTag.setAttribute("download", fileName);
         document.body.appendChild(aTag);
         aTag.click();
@@ -49,30 +48,24 @@ export default function MainZhCht() {
         </div>
         <div className={styles.sectionTextBox}>
           <div className={styles.text01}>
-            <h2>我們品牌的代表產品是 <span>“跳舞的狗狗甜甜圈”。</span></h2>
-            <h2><span>Dancing Doggienuts</span></h2>
+            <h2>
+              我們品牌的代表產品是 <span>“跳舞的狗狗甜甜圈”。</span>
+            </h2>
+            <h2>
+              <span>Dancing Doggienuts</span>
+            </h2>
+            <div>我們使用人類食用級別的新鮮肉類和內臟，</div>
+            <div>添加特有的維生素和礦物質，</div>
+            <div>含有高水分的半濕配方，</div>
+            <div>含有40多種必需營養素，營養全面均衡，</div>
+            <div>在低於80攝氏度的溫度下烹煮，最大程度地減少了</div>
+            <div>寵物食品的營養損失，</div>
+            <div>是可以作為主食的營養食品。</div>
             <div>
-              我們使用人類食用級別的新鮮肉類和內臟，
+              <h2>
+                我們的主要產品是：狗狗甜甜圈，狗狗甜甜圈 脆片，狗狗甜甜圈 燉菜
+              </h2>
             </div>
-            <div>
-              添加特有的維生素和礦物質，
-            </div>
-            <div>
-              含有高水分的半濕配方，
-            </div>
-            <div>
-               含有40多種必需營養素，營養全面均衡，
-            </div>
-            <div>
-              在低於80攝氏度的溫度下烹煮，最大程度地減少了
-            </div>
-            <div>
-              寵物食品的營養損失，
-            </div>
-            <div>
-              是可以作為主食的營養食品。
-            </div>
-            <div><h2>我們的主要產品是：狗狗甜甜圈，狗狗甜甜圈 脆片，狗狗甜甜圈 燉菜</h2></div>
             <div className={styles.yellow}>
               <img src={yellow} alt="" />
             </div>
@@ -89,11 +82,9 @@ export default function MainZhCht() {
             <h2>
               <span>D</span>OGGIENUTS <span>狗</span>狗甜甜圈
             </h2>
+            <div>跳舞的甜甜圈是韓國提供最多單一蛋白質的自然食品品牌。 </div>
             <div>
-            跳舞的甜甜圈是韓國提供最多單一蛋白質的自然食品品牌。{" "}
-            </div>
-            <div>
-            產品由雞肉、鴨肉、牛肉、三文魚、袋鼠肉、火雞、鹿肉、兔子肉、白肉魚、馬肉、黑山羊肉、豬肉、金槍魚、羊肉等多達14種單一蛋白質製成。
+              產品由雞肉、鴨肉、牛肉、三文魚、袋鼠肉、火雞、鹿肉、兔子肉、白肉魚、馬肉、黑山羊肉、豬肉、金槍魚、羊肉等多達14種單一蛋白質製成。
             </div>
             <div className={styles.yellow}>
               <img src={yellow} alt="yellow" />
@@ -110,20 +101,15 @@ export default function MainZhCht() {
         <div className={styles.sectionTextBox03}>
           <div className={`${styles.text03}, ${styles.ZhChttext03}`}>
             <h2>
-              <span className={styles.span}>D</span>oggienuts Chips <span>狗</span>狗甜甜圈 脆片
+              <span className={styles.span}>D</span>oggienuts Chips{" "}
+              <span>狗</span>狗甜甜圈 脆片
             </h2>
+            <div>富含40多種必需營養元素，營養均衡， 口感鬆脆結實，</div>
+            <div>有嚼勁，幹製配方， 在低於80攝氏度的溫度下製作，</div>
             <div>
-               富含40多種必需營養元素，營養均衡， 口感鬆脆結實，
+              最大限度減少了狗狗食品的營養損失， 是可作為主食的自然食品。
             </div>
-            <div>
-              有嚼勁，幹製配方， 在低於80攝氏度的溫度下製作，
-            </div>
-            <div>
-              最大限度減少了狗狗食品的營養損失，  是可作為主食的自然食品。
-            </div>
-            <div>
-             
-            </div>
+            <div></div>
             <div className={styles.yellowFlip}>
               <img src={yellowFlip} alt="" />
             </div>
@@ -138,8 +124,8 @@ export default function MainZhCht() {
         <div className={styles.sectionTextBox}>
           <div className={styles.text04}>
             <h2>
-            <span>“蟲肉甜甜圈”</span>使用超級食物-剛脫殼的蟋蟀製成的自然食品 
-            是100%人類食用級別的蟋蟀
+              <span>“蟲肉甜甜圈”</span>使用超級食物-剛脫殼的蟋蟀製成的自然食品
+              是100%人類食用級別的蟋蟀
             </h2>
             <div className={styles.gray}>100% Human Grade Cricket</div>
             <br />
@@ -147,9 +133,7 @@ export default function MainZhCht() {
             <div>鐵含量是西蘭花和菠菜的4倍，</div>
             <div>鈣含量高於牛奶，</div>
             <div>Omega3含量高於三文魚，</div>
-            <div>
-                 維生素、礦物質、Omega3和6脂肪酸的絕佳來源，
-            </div>
+            <div>維生素、礦物質、Omega3和6脂肪酸的絕佳來源，</div>
             <div>是含有全部9種必需氨基酸的完備的蛋白質。</div>
             <div className={styles.yellowFlip}>
               <img src={yellowFlip} alt="" />
@@ -160,7 +144,8 @@ export default function MainZhCht() {
 
       <div className={styles.section05}>
         <div className={styles.title05}>
-          <span>D</span>ogginuts <span>S</span>tew <span>狗</span>狗甜甜圈 <span>燉</span>菜
+          <span>D</span>ogginuts <span>S</span>tew <span>狗</span>狗甜甜圈{" "}
+          <span>燉</span>菜
         </div>
 
         <div className={styles.sectionTextBox}>
@@ -189,7 +174,7 @@ export default function MainZhCht() {
           <img src={section06} alt="section06" />
         </div>
         <div className={styles.sectionTextBox}>
-          <div className={`${styles.text06} , ${styles.ZhChttext06}` }>
+          <div className={`${styles.text06} , ${styles.ZhChttext06}`}>
             <h2>
               <span>S</span>tew <span>燉</span>菜
             </h2>
@@ -199,12 +184,8 @@ export default function MainZhCht() {
             <p></p>
             <p>灑在狗狗食品或天然食物上的Booster Stew(美味燉品)，</p>
             <p>是隨時隨地都可餵食的方便餐，</p>
-            <p>
-              通過美味燉品減少過度營養，對健康有益！
-            </p>
-            <p>
-              是營養豐富的零食，可作為主食配料或輔食餵食。
-            </p>
+            <p>通過美味燉品減少過度營養，對健康有益！</p>
+            <p>是營養豐富的零食，可作為主食配料或輔食餵食。</p>
             <div className={styles.yellowFlip}>
               <img src={yellowFlip} alt="" />
             </div>
@@ -221,12 +202,8 @@ export default function MainZhCht() {
             <h2>
               <span>D</span>HN
             </h2>
-            <div>
-              與營養學獸醫專家 Tokumoto Kazuyoshi博士合作，提出了
-            </div>
-            <div>
-              “狗狗甜甜圈-健康營養”的專業營養補充劑品牌。
-            </div>
+            <div>與營養學獸醫專家 Tokumoto Kazuyoshi博士合作，提出了</div>
+            <div>“狗狗甜甜圈-健康營養”的專業營養補充劑品牌。</div>
             <br />
             <div>成分不同意味著</div>
             <div>功效不同</div>
@@ -235,7 +212,7 @@ export default function MainZhCht() {
           <Button
             onClick={() => downloadFileURL(PDF_FILE_URL)}
             title="產品說明書 下載"
-            className = {styles.PdfButton}
+            className={styles.PdfButton}
           />
         </div>
       </div>
@@ -249,12 +226,8 @@ export default function MainZhCht() {
             <div>
               <span>狗狗甜甜圈 燉菜</span>
             </div>
-            <div>
-            在韓國最大的寵物展 K-PET FAIR榮獲“年度新產品”第一名。
-            </div>
-            <div>
-            這是一項完全由消費者投票決定的具有重大意義的獎項。
-            </div>
+            <div>在韓國最大的寵物展 K-PET FAIR榮獲“年度新產品”第一名。</div>
+            <div>這是一項完全由消費者投票決定的具有重大意義的獎項。</div>
             <div className={styles.yellowFlip}>
               <img src={yellowFlip} alt="" />
             </div>
@@ -263,14 +236,8 @@ export default function MainZhCht() {
       </div>
       <div className={styles.section09}>
         <div className={`${styles.text09} ${styles.ZhChttext09}`}>
-          <div>
-            承蒙消費者的喜愛
-            成長起來的狗狗甜甜圈，
-          </div>
-          <div>
-            現在已經是旅遊必備產品，
-            是寵物生日或者聖誕節必備的禮物，
-          </div>
+          <div>承蒙消費者的喜愛 成長起來的狗狗甜甜圈，</div>
+          <div>現在已經是旅遊必備產品， 是寵物生日或者聖誕節必備的禮物，</div>
           <div>也成為安慰患病狗狗的營養品。</div>
         </div>
         <div className={styles.yellowStick}>
