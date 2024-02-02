@@ -49,26 +49,21 @@ const AboutUsZhCht = () => {
       <div className="section_Officials">
         <div className="section_OfficialsText">
           <div className="section_OfficialsText_1">
-            <h3><span>D</span>OGGIENUTS <span>狗</span>狗甜甜圈</h3>
-              <p>跳舞甜甜圈系列產品全部符合
-                歐洲寵物產業聯合會(FFDIAF)、美國飼料管理協會(AAFCO)和
-                美國國家研究委員會(NRC)所規定的40余種必須的營養標準。
+            <h3><span>D</span>OGGIENUTS</h3>
+            <p>Nutritionally balanced, meeting all 40 essential nutrient standards set by 
+              the National Research Council (NRC), European Federation of the Companion Animal 
+              Industry (FEDIAF), and the American Association of Feed Control Officials (AAFCO).
               <br />
-              是营养均衡的纯天然食品，可作为主食喂食。
+              So it's Natural enough to be fed as a staple diet.
               </p>
               <p className="WEAREA_close_bracket">
                 <img className="" src={close_bracketLeft} alt="close_bracketLeft" />
               </p>
           </div>
-      
         </div>    
-      
-
-       
         <div className="section_OfficialsImg">
           <p><img src={OfficialsImg} alt="DOGGIENUTS Certification datas" /></p>
         </div>
-
       </div>
 
 
