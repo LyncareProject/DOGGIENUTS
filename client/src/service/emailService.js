@@ -1,6 +1,5 @@
 import axios from "axios";
-
-const SERVER_URL = "http://localhost:8080/api";
+import SERVER_URL from "./apiConfig";
 
 export const postEmail = ({
   name,
@@ -12,7 +11,7 @@ export const postEmail = ({
   sample,
   products,
 }) => {
-  return axios.post(SERVER_URL + "/email", {
+  return axios.post(`${SERVER_URL}/email`, {
     name,
     phone,
     email,
@@ -34,7 +33,7 @@ export const postEmailZhCht = ({
   sample,
   products,
 }) => {
-  return axios.post(SERVER_URL + "/emailZhCht", {
+  return axios.post(`${SERVER_URL}/emailZhCht`, {
     name,
     phone,
     email,
@@ -45,5 +44,3 @@ export const postEmailZhCht = ({
     products,
   });
 };
-
-// axios.get(SERVER_URL + "/email", { myError });
