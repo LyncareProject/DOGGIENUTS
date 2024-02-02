@@ -1,5 +1,3 @@
-import { testURL } from "./testURL";
-
-const SERVER_URL = `${testURL}/api`;
+const SERVER_URL = `/api`;
 
 export default SERVER_URL;

@@ -21,16 +21,22 @@ import section08 from "../../assets/img/section08.png";
 import styles from "./Main.module.css";
 import { img } from "../../swiper";
 import Button from "../../components/Button/Button";
+import axios from "axios";
 
 export default function MainZhCht() {
   const downloadFileURL = (url) => {
-    const fileName = url.split("/").pop();
-    const aTag = document.createElement("a");
-    aTag.href = url;
-    aTag.setAttribute("download", fileName);
-    document.body.appendChild(aTag);
-    aTag.click();
-    aTag.remove();
+    fetch(url)
+      .then((res) => res.blob())
+      .then((blob) => {
+        const blobURL = window.URL.createObjectURL(new Blob([blob]));
+        const fileName = url.split("/").pop();
+        const aTag = document.createElement("a");
+        aTag.href = blobURL;
+        aTag.setAttribute("download", fileName);
+        document.body.appendChild(aTag);
+        aTag.click();
+        aTag.remove();
+      });
   };
   return (
     <main className={styles.container}>
