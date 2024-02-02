@@ -24,7 +24,7 @@ const ContactZhCht = ({ setSending }) => {
   const emailRegEx =
     /^[A-Za-z0-9]([-_.]?[A-Za-z0-9])*@[A-Za-z0-9]([-_.]?[A-Za-z0-9])*\.[A-Za-z]{2,3}$/i;
 
-  const sendBtn1 = async () => {
+  const sendBtn = async () => {
     if (!Name || !Email) {
       return alert("請確認是否輸入了所有必需項目。");
     }
@@ -200,7 +200,7 @@ const ContactZhCht = ({ setSending }) => {
               value={TextArea}
             ></textarea>
           </div>
-          <button className="SendBtn" onClick={sendBtn1}>
+          <button className="SendBtn" onClick={sendBtn}>
             發送
           </button>
         </div>
