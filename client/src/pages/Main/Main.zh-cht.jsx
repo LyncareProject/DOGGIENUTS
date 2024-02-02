@@ -24,19 +24,15 @@ import Button from "../../components/Button/Button";
 
 export default function MainZhCht() {
   const downloadFileURL = (url) => {
-    fetch(url)
-      .then((res) => res.blob())
-      .then((blob) => {
-        const blobURL = window.URL.createObjectURL(new Blob([blob]));
-        const fileName = url.split("/").pop();
-        const aTag = document.createElement("a");
-        aTag.href = `${blobURL}/pdf/`;
-        aTag.setAttribute("download", fileName);
-        document.body.appendChild(aTag);
-        aTag.click();
-        aTag.remove();
-      });
+    const fileName = url.split("/").pop();
+    const aTag = document.createElement("a");
+    aTag.href = url;
+    aTag.setAttribute("download", fileName);
+    document.body.appendChild(aTag);
+    aTag.click();
+    aTag.remove();
   };
+
   return (
     <main className={styles.container}>
       <div className={styles.mainBg}>
