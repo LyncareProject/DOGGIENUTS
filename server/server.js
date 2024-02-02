@@ -7,16 +7,8 @@ const { PORT } = require("./common");
 const mongo = require("./mongo");
 require("dotenv").config();
 
-const allowed = ["http://petsmeal.wevibe.co.kr/", "http://localhost:3000/"];
-
 const corsOptions = {
-  origin: function (origin, callback) {
-    if (allowed.indexOf(origin) !== -1 || !origin) {
-      callback(null, true);
-    } else {
-      callback(new Error("CORS 가 허용되지 않았습니다."));
-    }
-  },
+  origin: ["http://petsmeal.wevibe.co.kr/", "http://localhost:3000/"],
 };
 
 app.use(cors(corsOptions));
