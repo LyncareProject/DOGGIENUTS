@@ -196,8 +196,8 @@ const Contact = ({ setSending }) => {
               rows="10"
               placeholder="Sample Request
 - Minimum of 1 box per sample
-- a shipping fee
-- Wholesale supply price "
+- Additional shipping fee
+- Offered at wholesale price "
               onChange={handleInput}
               value={TextArea}
             ></textarea>
