@@ -56,7 +56,7 @@ const ContactZhCht = ({ setSending }) => {
       setSending(false);
     });
   };
-  const items = ["甜甜圈", "脆片", "燉菜", "Omega 3"];
+  const items = ["甜甜圈", " 脆片", " 燉菜", " Omega 3"];
   const handleCheckboxChange = (event) => {
     const value = event.target.value;
     if (selectItems.includes(value)) {
@@ -65,7 +65,7 @@ const ContactZhCht = ({ setSending }) => {
       setSelectItems([...selectItems, value]);
     }
   };
-  const sampleItems = ["甜甜圈", "脆片", "燉菜", "Omega 3"];
+  const sampleItems = ["甜甜圈", " 脆片", " 燉菜", " Omega 3"];
   const sampleCheckboxChange = (event) => {
     const value = event.target.value;
     if (sample.includes(value)) {
@@ -156,22 +156,24 @@ const ContactZhCht = ({ setSending }) => {
         <div className="ContactDivision">
           <h3 className="ContactInputTitle">感興趣的產品(多個)</h3>
           <div className="ContactSelectWrap">
-            {items.map((item) => (
-              <div className="CheckboxWrap">
-                <input
-                  type="checkbox"
-                  value={item}
-                  checked={selectItems.includes(item)}
-                  onChange={handleCheckboxChange}
-                />
-                <label htmlFor={item}>{item}</label>
-              </div>
-            ))}
+            <>
+              {items.map((item) => (
+                <div key={item} className="CheckboxWrap">
+                  <input
+                    type="checkbox"
+                    value={item}
+                    checked={selectItems.includes(item)}
+                    onChange={handleCheckboxChange}
+                  />
+                  <label htmlFor={item}>{item}</label>
+                </div>
+              ))}
+            </>
           </div>
           <h3 className="ContactInputTitle">感興趣的樣品(多個)</h3>
           <div className="ContactSelectWrap">
             {sampleItems.map((sampleItems) => (
-              <div className="CheckboxWrap">
+              <div key={sampleItems} className="CheckboxWrap">
                 <input
                   type="checkbox"
                   value={sampleItems}

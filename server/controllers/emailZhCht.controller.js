@@ -76,6 +76,7 @@ exports.postEmailZhCht = async (req, res) => {
                         <p style='font-size : 18px;'>샘플 품목 : <span style='font-weight : 600; margin-right: 10px;'>${JSON.parse(
                           sample
                         )}</span></p>
+                        <p style='font-size : 18px; font-weight : 600; margin-right: 10px; color: gray'>| 甜甜圈 도넛 | 脆片 칩 | 燉菜 스튜 | 오메가 3 |</p>
                         <p style='font-size : 18px;'>문의내용 : <span style='font-weight : 600; margin-right: 10px;'>${products}</span></p>
                     </div>
                 </div>`,
