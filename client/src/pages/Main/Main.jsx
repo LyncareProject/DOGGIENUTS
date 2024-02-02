@@ -21,6 +21,7 @@ import section08 from "../../assets/img/section08.png";
 import styles from "./Main.module.css";
 import { img } from "../../swiper";
 import Button from "../../components/Button/Button";
+import ContactBar from "../../components/ContactBar/ContactBar";
 
 export default function Main() {
   // const downloadFileURL = (url) => {
@@ -34,6 +35,7 @@ export default function Main() {
   // };
   return (
     <main className={styles.container}>
+      <ContactBar />
       <div className={styles.mainBg}>
         <img src={mainBg} alt="main" />
       </div>

@@ -29,7 +29,7 @@ function App() {
     return (
       <div>
         <Sidebar />
-        <ContactBar />
+
         <Header />
         <Outlet />
         <Footer />
@@ -40,7 +40,7 @@ function App() {
     return (
       <div>
         <SidebarZhCht />
-        <ContactBarZhCht />
+      
         <HeaderChn />
         <Outlet />
         <FooterChn />

@@ -9,7 +9,7 @@ const ContactBarZhCht = () => {
     <div className="ContactBar">
       <p className="ContactBar_1, CN_ContactBar_1">
         <Link to="/zh-cht/contact">
-          <span>聯繫</span>
+          <span>聯係</span>
           <img className="dog1" src={dog1} alt="dog1" />
         </Link>
       </p>
