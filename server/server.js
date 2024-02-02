@@ -7,7 +7,11 @@ const { PORT } = require("./common");
 const mongo = require("./mongo");
 require("dotenv").config();
 
-app.use(cors("http://petsmeal.wevibe.co.kr/"));
+const corsOptions = {
+  origin: ["http://petsmeal.wevibe.co.kr/", "http://localhost:3000/"],
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
