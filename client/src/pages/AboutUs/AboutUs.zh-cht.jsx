@@ -12,6 +12,8 @@ import Currentsituation_bg1 from "./../../assets/img/AboutUs/Currentsituation_bg
 import Currentsituation_bg2 from "./../../assets/img/AboutUs/Currentsituation_bg2.png";
 import open_bracket from "./../../assets/img/AboutUs/open_bracket.png";
 import close_bracket from "./../../assets/img/AboutUs/close_bracket.png";
+import close_bracketLeft from "./../../assets/img/AboutUs/close_bracketLeft.png";
+import OfficialsImg from "./../../assets/img/AboutUs/OfficialsImg.png";
 
 const AboutUsZhCht = () => {
   return (
@@ -43,6 +45,32 @@ const AboutUsZhCht = () => {
           </p>
         </div>
       </div>
+
+      <div className="section_Officials">
+        <div className="section_OfficialsText">
+          <div className="section_OfficialsText_1">
+            <h3><span>D</span>OGGIENUTS <span>狗</span>狗甜甜圈</h3>
+               <p>跳舞甜甜圈系列產品全部符合
+                歐洲寵物產業聯合會(FFDIAF)、美國飼料管理協會(AAFCO)和
+                美國國家研究委員會(NRC)所規定的40余種必須的營養標準。
+              <br />
+                是营养均衡的纯天然食品，可作为主食喂食。
+              </p>
+              <p className="WEAREA_close_bracket">
+                <img className="" src={close_bracketLeft} alt="close_bracketLeft" />
+              </p>
+          </div>
+      
+        </div>    
+      
+
+       
+        <div className="section_OfficialsImg">
+          <p><img src={OfficialsImg} alt="DOGGIENUTS Certification datas" /></p>
+        </div>
+
+      </div>
+
 
       <div className="seciton_2">
         <p className="K_petfair">

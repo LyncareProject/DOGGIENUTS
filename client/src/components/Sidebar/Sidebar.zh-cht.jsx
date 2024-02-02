@@ -45,7 +45,7 @@ function SidebarZhCht() {
             <p>關於我們</p>
           </Link>
           <Link to="/zh-cht/contact" onClick={closeSidebar}>
-            <p>聯繫</p>
+            <p>聯係</p>
           </Link>
 
           <Link to="/">

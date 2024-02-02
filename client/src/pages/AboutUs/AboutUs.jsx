@@ -12,6 +12,8 @@ import Currentsituation_bg1 from "./../../assets/img/AboutUs/Currentsituation_bg
 import Currentsituation_bg2 from "./../../assets/img/AboutUs/Currentsituation_bg2.png";
 import open_bracket from "./../../assets/img/AboutUs/open_bracket.png";
 import close_bracket from "./../../assets/img/AboutUs/close_bracket.png";
+import close_bracketLeft from "./../../assets/img/AboutUs/close_bracketLeft.png";
+import OfficialsImg from "./../../assets/img/AboutUs/OfficialsImg.png";
 
 const AboutUs = () => {
   return (
@@ -44,6 +46,35 @@ const AboutUs = () => {
           </p>
         </div>
       </div>
+
+
+      <div className="section_Officials">
+        <div className="section_OfficialsText">
+          <div className="section_OfficialsText_1">
+            <h3><span>D</span>OGGIENUTS</h3>
+            <p>Nutritionally balanced, meeting all 40 essential nutrient standards set by 
+              the National Research Council (NRC), European Federation of the Companion Animal 
+              Industry (FEDIAF), and the American Association of Feed Control Officials (AAFCO).
+              <br />
+              So it's Natural enough to be fed as a staple diet.
+              </p>
+              <p className="WEAREA_close_bracket">
+                <img className="" src={close_bracketLeft} alt="close_bracketLeft" />
+              </p>
+          </div>
+      
+        </div>    
+      
+
+       
+        <div className="section_OfficialsImg">
+          <p><img src={OfficialsImg} alt="DOGGIENUTS Certification datas" /></p>
+        </div>
+
+      </div>
+
+
+
 
       <div className="seciton_2">
         <p className="K_petfair">

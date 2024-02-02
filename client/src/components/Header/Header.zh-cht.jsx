@@ -26,7 +26,7 @@ const HeaderZhCht = () => {
 
           <li className="dep1">
             <Link to="/zh-cht/contact">
-              <span>聯繫</span>
+              <span>聯係</span>
             </Link>
           </li>
           <li className="selectLang">

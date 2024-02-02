@@ -112,6 +112,73 @@ hr {
   display: none;
 }
 
+
+
+
+/* section_Officials */
+
+.section_Officials{
+ 
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+}
+
+.section_OfficialsText{
+  position: relative;
+  top: 50%;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.section_OfficialsText_1{
+  position: absolute;
+  top: 50%;
+  transform: translate(2%, -55%);
+}
+
+.section_OfficialsText h3{
+  display: block;
+  font-size: 24px;
+  text-align: center;
+
+ 
+}
+.section_OfficialsText h3 span{
+  
+  color: #fd752b;
+}
+.section_OfficialsText p{
+  display: block;
+ width: 76%;
+ margin: 0 auto;
+padding: 0;
+}
+
+.section_OfficialsImg{
+  
+  width: 45%;
+}
+.section_OfficialsImg p img{
+  display: block;
+  width: 100%;
+}
+
+.WEAREA_close_bracket img{
+  display: block;
+  width: 13%;
+  margin-left: -45px;
+
+  
+}
+
+
+
+/* seciton2 */
+
+
 .seciton_2 {
   position: relative;
   display: flex;
@@ -405,6 +472,36 @@ hr {
     transform: translate(240%, 145%);
     z-index: 1000;
   }
+
+  .section_Officials{
+    display:flex; flex-direction:column;
+  }
+
+  .section_OfficialsText{
+    position: unset;
+    display: block;
+    width: 100%;
+    top: 0;
+    order:2;
+    margin: 0 auto;
+ 
+  }
+  .section_OfficialsText_1{
+    display: block;
+    position: unset;
+    margin: 0 auto;
+    transform: none;
+    
+  }
+  .section_OfficialsText_1 p{
+    padding-left: 7%;
+  }
+  .section_OfficialsImg{
+    display: block;
+    width: 100%;
+    order:1;
+  }
+  
 
   .seciton_2 {
     display: block;

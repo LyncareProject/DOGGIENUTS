@@ -43,7 +43,7 @@ const ContactZhCht = ({ setSending }) => {
       sample: JSON.stringify(sample),
     }).then((response) => {
       if (response.data.message === "Success") {
-        alert("感謝您的諮詢。 我們會盡快與您聯繫。");
+        alert("感謝您的諮詢。 我們會盡快與您聯係。");
         setInputs({
           Name: "",
           Phone: "",
@@ -82,9 +82,9 @@ const ContactZhCht = ({ setSending }) => {
   return (
     <div className="Contact Wrap">
       <div className="ContactBanner">
-        <h3>聯繫</h3>
+        <h3>聯係</h3>
         <div>如果您有任何建議或問題,</div>
-        <div>請聯繫我們。</div>
+        <div>請聯係我們。</div>
         <div>我們期待您的來信。</div>
       </div>
       <div className="ContactWrap">
