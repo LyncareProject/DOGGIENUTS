@@ -121,7 +121,7 @@ exports.postEmail = async (req, res) => {
                       )}</span></p>
                       </div>
                       <p style='font-size : 18px; text-align: center'>Text Area</p>
-                      <div style='font-weight : 600; margin-right: 10px; text-align: justify'>${products}</div>
+                      <div style='font-size : 18px; font-weight : 600; margin-right: 10px; text-align: justify'>${products}</div>
                   </div>
               </div>`,
       })
