@@ -56,7 +56,7 @@ exports.postEmailZhCht = async (req, res) => {
                     min-height: 1300px
                 '>
                     <div style='
-                            text-align: center;
+                            text-align: left;
                             width: 800px;
                             margin: 30px auto;
                             padding: 40px 80px;
@@ -64,8 +64,9 @@ exports.postEmailZhCht = async (req, res) => {
                             background: #FFF;
                             box-sizing: border-box;
                         '>
-                        <h3 style='font-size : 26px; font-weight : 400; margin-bottom : 30px;'>Doggienuts 문의 내역</h3> 
-                        <p style='font-size : 18px; margin-bottom : 30px;'>이메일 By <span style='font-weight : 600; margin-right: 10px;'>${email}</span></p>      
+                        <h3 style='font-size : 26px; font-weight : 400; margin-bottom : 30px; text-align: center;'>Doggienuts 문의 내역</h3> 
+                        <p style='font-size : 18px; margin-bottom : 30px; text-align: center;'>이메일 By <span style='font-weight : 600; margin-right: 10px; text-align: center;'>${email}</span></p>
+                        <div style='text-align : center'>
                         <p style='font-size : 18px;'>이름 : <span style='font-weight : 600; margin-right: 10px;'>${name}</span></p>
                         <p style='font-size : 18px;'>핸드폰 : <span style='font-weight : 600; margin-right: 10px;'>${phone}</span></p>
                         <p style='font-size : 18px;'>회사 : <span style='font-weight : 600; margin-right: 10px;'>${company}</span></p> 
@@ -77,7 +78,8 @@ exports.postEmailZhCht = async (req, res) => {
                           sample
                         )}</span></p>
                         <p style='font-size : 18px; font-weight : 600; margin-right: 10px; color: gray'>| 甜甜圈 도넛 | 脆片 칩 | 燉菜 스튜 | 오메가 3 |</p>
-                        <p style='font-size : 18px;'>문의내용 : <span style='font-weight : 600; margin-right: 10px;'>${products}</span></p>
+                        </div>      
+                        <p style='font-size : 18px;'>문의내용 : <br /> <span style='font-weight : 600; margin-right: 10px;'>${products}</span></p>
                     </div>
                 </div>`,
     })
