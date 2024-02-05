@@ -56,7 +56,7 @@ exports.postEmail = async (req, res) => {
                   min-height: 1300px
               '>
                   <div style='
-                          text-align: center;
+                          text-align: left;
                           width: 800px;
                           margin: 30px auto;
                           padding: 40px 80px;
@@ -64,8 +64,8 @@ exports.postEmail = async (req, res) => {
                           background: #FFF;
                           box-sizing: border-box;
                       '>
-                      <h3 style='font-size : 26px; font-weight : 400; margin-bottom : 30px;'>Doggienuts 문의 내역</h3> 
-                      <p style='font-size : 18px; margin-bottom : 30px;'>이메일 By <span style='font-weight : 600; margin-right: 10px;'>${email}</span></p>      
+                      <h3 style='font-size : 26px; font-weight : 400; margin-bottom : 30px; text-align: center;'>Doggienuts 문의 내역</h3> 
+                      <p style='font-size : 18px; margin-bottom : 30px; text-align: center;'>이메일 By <span style='font-weight : 600; margin-right: 10px; text-align: center;'>${email}</span></p>      
                       <p style='font-size : 18px;'>이름 : <span style='font-weight : 600; margin-right: 10px;'>${name}</span></p>
                       <p style='font-size : 18px;'>핸드폰 : <span style='font-weight : 600; margin-right: 10px;'>${phone}</span></p>
                       <p style='font-size : 18px;'>회사 : <span style='font-weight : 600; margin-right: 10px;'>${company}</span></p> 

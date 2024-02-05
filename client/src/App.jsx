@@ -1,6 +1,6 @@
 import "./App.css";
-import React, { useState } from "react";
-import { Routes, Route, Outlet } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Routes, Route, Outlet, useNavigate } from "react-router-dom";
 import Contact from "./pages/Contact/Contact";
 import Sending from "./components/Sending/Sending";
 import Main from "./pages/Main/Main";
@@ -18,7 +18,15 @@ import SidebarZhCht from "./components/Sidebar/Sidebar.zh-cht";
 
 function App() {
   const [sending, setSending] = useState(false);
-
+  const lang = navigator.language.toLowerCase().substring(0.2);
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (lang === "zh-tw") {
+      navigate("/zh-cht");
+    } else {
+      navigate("/");
+    }
+  }, [lang]);
   const Layout = () => {
     return (
       <div>

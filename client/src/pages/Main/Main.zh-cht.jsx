@@ -99,7 +99,7 @@ export default function MainZhCht() {
         <div className={styles.sectionTextBox03}>
           <div className={`${styles.text03}, ${styles.ZhChttext03}`}>
             <h2>
-              <span className={styles.span}>D</span>oggienuts Chips{" "}
+              <span className={styles.span}>D</span>oggienuts Chips
               <span>狗</span>狗甜甜圈 脆片
             </h2>
             <div>
@@ -110,7 +110,7 @@ export default function MainZhCht() {
               最大限度減少了狗狗食品的營養損失， 是可作為主食的自然食品。
             </div>
             <div></div>
-            <div className={styles.yellowFlip}>
+            <div className={styles.yellowFlip1}>
               <img src={yellowFlip} alt="" />
             </div>
           </div>
