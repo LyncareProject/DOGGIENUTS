@@ -36,7 +36,7 @@ export default function MainZhCht() {
 
   return (
     <main className={styles.container}>
-      <ContactBarZhCht></ContactBarZhCht>
+      <ContactBarZhCht />
       <div className={styles.mainBg}>
         <img src={mainBg} alt="main" />
       </div>

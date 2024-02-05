@@ -1,6 +1,12 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
-import { Routes, Route, Outlet, useNavigate } from "react-router-dom";
+import {
+  Routes,
+  Route,
+  Outlet,
+  useNavigate,
+  useLocation,
+} from "react-router-dom";
 import Contact from "./pages/Contact/Contact";
 import Sending from "./components/Sending/Sending";
 import Main from "./pages/Main/Main";
@@ -20,13 +26,15 @@ function App() {
   const [sending, setSending] = useState(false);
   const lang = navigator.language.toLowerCase().substring(0.2);
   const navigate = useNavigate();
-  useEffect(() => {
-    if (lang === "zh-tw") {
-      navigate("/zh-cht");
+  // useEffect(() => {
+  if (lang === "zh-tw") {
+    if (window.location.href.indexOf("zh-cht") !== -1) {
+      return !1;
     } else {
-      navigate("/");
+      window.location.href = "http://petsmeal.wevibe.co.kr/zh-cht/";
     }
-  }, [lang]);
+  }
+  // }, []);
   const Layout = () => {
     return (
       <div>
