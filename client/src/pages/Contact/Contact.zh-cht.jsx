@@ -163,7 +163,7 @@ const ContactZhCht = ({ setSending }) => {
                   <input
                     type="checkbox"
                     value={item}
-                    checked={items.includes(items)}
+                    checked={selectItems.includes(items)}
                     onChange={handleCheckboxChange}
                   />
                   <label htmlFor={item}>{item}</label>
