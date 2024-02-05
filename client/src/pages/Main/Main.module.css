@@ -206,6 +206,7 @@
   font-size: 35px;
   margin-bottom: 20px;
   font-weight: 700;
+  text-align: center;
 }
 .title05 span {
   color: #ffb104;
@@ -403,36 +404,40 @@
   z-index: 100 important;
 }
 
-
-
-
 /* ZhCht */
 
-
-.ZhChttext03{
+.ZhChttext03 {
   text-shadow: -1px 0px #eee, 0px 1px #eee, 1px 0px #eee, 0px -1px #eee;
   font-size: 17px;
 }
 
-.PdfButton{
+.PdfButton {
   display: block;
   margin: 0 auto;
+  background: #06d;
+  color: #fff;
+  border: 1px solid #0066dd;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
   margin-top: 17px;
   margin-bottom: -10px;
   padding: 10px 15px;
-   
+}
+
+.PdfButton:active {
+  background: #4890e4;
 }
 
 .ZhChttext06 {
   margin-top: -18px;
 }
 
-
-.ZhChttext08 div{
+.ZhChttext08 div {
   width: 563px;
 }
 
-.ZhChttext09{
+.ZhChttext09 {
   font-size: 27.5px;
 }
 
@@ -483,6 +488,14 @@
   .yellowStick img {
     width: 10px;
     height: 70px;
+  }
+  .section,
+  .section03,
+  .section04,
+  .section05,
+  .section06,
+  .section09 {
+    padding: 0 2%;
   }
 }
 

@@ -161,7 +161,7 @@ const Contact = ({ setSending }) => {
           <h3 className="ContactInputTitle">Product of Interest (Multiple)</h3>
           <div className="ContactSelectWrap">
             {items.map((item) => (
-              <div className="CheckboxWrap">
+              <div key={item} className="CheckboxWrap">
                 <input
                   type="checkbox"
                   value={item}
@@ -175,7 +175,7 @@ const Contact = ({ setSending }) => {
           <h3 className="ContactInputTitle">Sample of Interest (Multiple)</h3>
           <div className="ContactSelectWrap">
             {sampleItems.map((sampleItems) => (
-              <div className="CheckboxWrap">
+              <div key={sampleItems} className="CheckboxWrap">
                 <input
                   type="checkbox"
                   value={sampleItems}

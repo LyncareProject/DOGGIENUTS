@@ -20,18 +20,8 @@ import section07 from "../../assets/img/section07.png";
 import section08 from "../../assets/img/section08.png";
 import styles from "./Main.module.css";
 import { img } from "../../swiper";
-import Button from "../../components/Button/Button";
 
 export default function Main() {
-  // const downloadFileURL = (url) => {
-  //   const fileName = url.split("/").pop();
-  //   const aTag = document.createElement("a");
-  //   aTag.href = url;
-  //   aTag.setAttribute("download", fileName);
-  //   document.body.appendChild(aTag);
-  //   aTag.click();
-  //   aTag.remove();
-  // };
   return (
     <main className={styles.container}>
       <div className={styles.mainBg}>
@@ -286,78 +276,6 @@ export default function Main() {
           </SwiperSlide>
         ))}
       </Swiper>
-
-      {/*
-      <div className={styles.section}>
-        <img src={section07} alt="section07" />
-        <div className={styles.sectionText07}>
-          <h2>
-            <span>D</span>HN
-          </h2>
-          <div>It will be presented with Dr. Kazuyoshi Tokumoto, a </div>
-          <div>veterinarian specializing in nutrition</div>
-          <div>Dogginuts Health & Nutrition’s Nutrition Supplement </div>
-          <div>Specialized Brand</div>
-          <br />
-          <div>The difference in the raw materials the difference in </div>
-          <div>effectiveness </div>
-          <div>Meet the highest-spec nutritional supplements</div>
-        </div>
-      </div>
-
-      <div className={styles.section}>
-        <img src={section08} alt="section08" />
-        <div className={styles.sectionText08}>
-          <div>
-            <span>Doggienuts Stew</span> was awarded 1st place for{" "}
-          </div>
-          <div>“New Product of the Year” at the K-PET FAIR,</div>
-          <div>the largest pet fair in Korea.</div>
-          <div>this was a significant achievement based solely</div>
-          <div>consumer votes.</div>
-        </div>
-      </div>
-
-      <div className={styles.section}>
-        <img src={section09} alt="section09" />
-        <div className={styles.sectionText09}>
-          <div>Doggienuts have grown into a consumer favorite</div>
-          <div>
-            It’s a traveling staple a must-have gift for your pet’s birthday or
-            Christmas
-          </div>
-          <div>and a comfort food for sick dogs.</div>
-        </div>
-      </div>
-
-      <div className={styles.section}>
-        <img src={section10} alt="section10" />
-        <div className={styles.sectionText10}>
-          <div>
-            Our products are loved by kibble-free pets and pets with picky
-            eaters.
-          </div>
-          <div>
-            It’s also known for being a greate food for elderly and sick dogs.
-          </div>
-          <div>
-            So it’s been going viral in the dog community and on social media.
-          </div>
-        </div>
-      </div>
-
-      <div className={styles.section}>
-        <img src={section11} alt="section11" />
-        <div className={styles.sectionText11}>
-          <div>
-            Consumers recreate Doggienut’s brand image on social edia by
-            themseleves.
-          </div>
-          <div>
-            As a result of these times, doggienut has become a game and a
-            culture.
-          </div>
-        </div> */}
     </main>
   );
 }
