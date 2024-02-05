@@ -66,7 +66,7 @@ exports.postEmailZhCht = async (req, res) => {
                         '>
                         <h3 style='font-size : 26px; font-weight : 400; margin-bottom : 30px; text-align: center;'>Doggienuts 문의 내역</h3> 
                         <p style='font-size : 18px; margin-bottom : 30px; text-align: center;'>이메일 By <span style='font-weight : 600; margin-right: 10px; text-align: center;'>${email}</span></p>
-                        <div style='width: 400px; display: flex; justify-content: center; margin: 0 auto;'>
+                        <div style='width: 400px; margin: 0 auto;'>
                         <p style='font-size : 18px;'>이름 : <span style='font-weight : 600; margin-right: 10px;'>${name}</span></p>
                         <p style='font-size : 18px;'>핸드폰 : <span style='font-weight : 600; margin-right: 10px;'>${phone}</span></p>
                         <p style='font-size : 18px;'>회사 : <span style='font-weight : 600; margin-right: 10px;'>${company}</span></p> 
@@ -109,7 +109,7 @@ exports.postEmailZhCht = async (req, res) => {
             '>
                         <h3 style='font-size : 26px; font-weight : 400; margin-bottom : 30px; text-align: center;'>Doggienuts 確認產品諮詢</h3> 
                         <p style='font-size : 18px; margin-bottom : 30px; text-align: center'>電子郵箱 : <span style='font-weight : 600; margin-right: 10px; text-align: center;'>${email}</span></p>      
-                        <div style='width: 400px; display: flex; justify-content: center; margin: 0 auto;'>
+                        <div style='width: 400px; margin: 0 auto;'>
                         <p style='font-size : 18px;'>姓名 : <span style='font-weight : 600; margin-right: 10px;'>${name}</span></p>
                         <p style='font-size : 18px;'>電話號碼 : <span style='font-weight : 600; margin-right: 10px;'>${phone}</span></p>
                         <p style='font-size : 18px;'>公司 : <span style='font-weight : 600; margin-right: 10px;'>${company}</span></p> 
