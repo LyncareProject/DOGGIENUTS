@@ -102,11 +102,12 @@ export default function MainZhCht() {
               <span className={styles.span}>D</span>oggienuts Chips{" "}
               <span>狗</span>狗甜甜圈 脆片
             </h2>
-            <div>富含40多種必需營養元素，營養均衡， 口感鬆脆結實，
-                  <br />
-                  有嚼勁，幹製配方， 在低於80攝氏度的溫度下製作，
-                  <br />
-                  最大限度減少了狗狗食品的營養損失， 是可作為主食的自然食品。
+            <div>
+              富含40多種必需營養元素，營養均衡， 口感鬆脆結實，
+              <br />
+              有嚼勁，幹製配方， 在低於80攝氏度的溫度下製作，
+              <br />
+              最大限度減少了狗狗食品的營養損失， 是可作為主食的自然食品。
             </div>
             <div></div>
             <div className={styles.yellowFlip}>

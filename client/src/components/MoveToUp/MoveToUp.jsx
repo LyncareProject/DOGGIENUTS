@@ -26,6 +26,8 @@ export default function MoveToUp() {
   const MoveToUp = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+  if (window.location.pathname === "/contact") return null;
+  if (window.location.pathname === "/zh-cht/contact") return null;
   return (
     <div className={styles.moveToUpWrap}>
       <img

@@ -19,6 +19,7 @@ import section06 from "../../assets/img/section06.png";
 import section07 from "../../assets/img/section07.png";
 import section08 from "../../assets/img/section08.png";
 import styles from "./Main.module.css";
+import ContactBar from "../../components/ContactBar/ContactBar";
 import { img } from "../../swiper";
 export default function Main() {
   return (
