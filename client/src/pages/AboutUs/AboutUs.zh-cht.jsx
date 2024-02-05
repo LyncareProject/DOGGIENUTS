@@ -15,9 +15,12 @@ import close_bracket from "./../../assets/img/AboutUs/close_bracket.png";
 import close_bracketLeft from "./../../assets/img/AboutUs/close_bracketLeft.png";
 import OfficialsImg from "./../../assets/img/AboutUs/OfficialsImg.png";
 
+import ContactBarZhCht from "../../components/ContactBar/ContactBar.zh-cht";
+
 const AboutUsZhCht = () => {
   return (
     <div className="wrap">
+      <ContactBarZhCht/>
       <div className="flex__1">
         <div className="seciton_1">
           <p>
@@ -49,12 +52,13 @@ const AboutUsZhCht = () => {
       <div className="section_Officials">
         <div className="section_OfficialsText">
           <div className="section_OfficialsText_1">
-            <h3><span>D</span>OGGIENUTS</h3>
-            <p>Nutritionally balanced, meeting all 40 essential nutrient standards set by 
-              the National Research Council (NRC), European Federation of the Companion Animal 
-              Industry (FEDIAF), and the American Association of Feed Control Officials (AAFCO).
+            <h3><span>狗</span>狗甜甜圈</h3>
+              <p> 
+                跳舞甜甜圈系列產品全部符合
+                歐洲寵物產業聯合會(FFDIAF)、美國飼料管理協會(AAFCO)和
+                美國國家研究委員會(NRC)所規定的40余種必須的營養標準。
               <br />
-              So it's Natural enough to be fed as a staple diet.
+              是营养均衡的纯天然食品，可作为主食喂食。
               </p>
               <p className="WEAREA_close_bracket">
                 <img className="" src={close_bracketLeft} alt="close_bracketLeft" />
@@ -151,9 +155,9 @@ const AboutUsZhCht = () => {
               <br />
               冷藏倉庫
               <br />
+              直接進口肉類,
               <br />
-              <br />
-              直接進口肉類, 使用新鮮肉味
+              使用新鮮肉味
             </p>
             <p className="Currentsituation_bg2">
               <img src={Currentsituation_bg2} alt="Currentsituation_bg2" />

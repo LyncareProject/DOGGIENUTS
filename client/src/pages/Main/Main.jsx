@@ -20,10 +20,10 @@ import section07 from "../../assets/img/section07.png";
 import section08 from "../../assets/img/section08.png";
 import styles from "./Main.module.css";
 import { img } from "../../swiper";
-
 export default function Main() {
   return (
     <main className={styles.container}>
+      <ContactBar />
       <div className={styles.mainBg}>
         <img src={mainBg} alt="main" />
       </div>

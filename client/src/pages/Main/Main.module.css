@@ -409,6 +409,10 @@
 .ZhChttext03 {
   text-shadow: -1px 0px #eee, 0px 1px #eee, 1px 0px #eee, 0px -1px #eee;
   font-size: 17px;
+  text-align: center;
+}
+.ZhChttext03 span{
+  color: #ff7124;
 }
 
 .PdfButton {
@@ -502,7 +506,14 @@
 @media screen and (max-width: 768px) {
   .section {
     flex-direction: column;
+    margin: 15px auto;
+
   }
+  .section2 , .section03 , .section05 ,.section04, .section06{
+    margin: 50px auto 0;
+  }
+
+
   .text01 {
     padding-left: 0;
     margin: 0 auto;
@@ -669,6 +680,18 @@
   }
   .yellowStick img {
     display: none;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .ZhChttext03{
+    display: block;
+    width: 85%;
+    margin: 0 auto;
+    text-align-last: left;
+  }
+  .title05{
+    width: 80%;
   }
 }
 

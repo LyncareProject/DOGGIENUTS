@@ -14,10 +14,12 @@ import open_bracket from "./../../assets/img/AboutUs/open_bracket.png";
 import close_bracket from "./../../assets/img/AboutUs/close_bracket.png";
 import close_bracketLeft from "./../../assets/img/AboutUs/close_bracketLeft.png";
 import OfficialsImg from "./../../assets/img/AboutUs/OfficialsImg.png";
+import ContactBar from "../../components/ContactBar/ContactBar";
 
 const AboutUs = () => {
   return (
     <div className="wrap">
+      <ContactBar />
       <div className="flex__1">
         <div className="seciton_1">
           <p>
