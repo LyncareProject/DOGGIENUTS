@@ -57,19 +57,21 @@ const ContactZhCht = ({ setSending }) => {
     });
   };
   const items = ["甜甜圈", " 脆片", " 燉菜", " Omega 3"];
+  const itemsCht = items.join("、");
   const handleCheckboxChange = (event) => {
     const value = event.target.value;
-    if (selectItems.includes(value)) {
-      setSelectItems(selectItems.filter((item) => item !== value));
+    if (itemsCht.includes(value)) {
+      setSelectItems(itemsCht.filter((itemsCht) => itemsCht !== value));
     } else {
       setSelectItems([...selectItems, value]);
     }
   };
   const sampleItems = ["甜甜圈", " 脆片", " 燉菜", " Omega 3"];
+  const sampleCht = sampleItems.join("、");
   const sampleCheckboxChange = (event) => {
     const value = event.target.value;
-    if (sample.includes(value)) {
-      setSample(sample.filter((sampleItems) => sampleItems !== value));
+    if (sampleCht.includes(value)) {
+      setSample(sampleCht.filter((sampleCht) => sampleCht !== value));
     } else {
       setSample([...sample, value]);
     }
@@ -162,7 +164,7 @@ const ContactZhCht = ({ setSending }) => {
                   <input
                     type="checkbox"
                     value={item}
-                    checked={selectItems.includes(item)}
+                    checked={itemsCht.includes(itemsCht)}
                     onChange={handleCheckboxChange}
                   />
                   <label htmlFor={item}>{item}</label>
@@ -177,7 +179,7 @@ const ContactZhCht = ({ setSending }) => {
                 <input
                   type="checkbox"
                   value={sampleItems}
-                  checked={sample.includes(sampleItems)}
+                  checked={sampleCht.includes(sampleCht)}
                   onChange={sampleCheckboxChange}
                 />
                 <label htmlFor={sampleItems}>{sampleItems}</label>

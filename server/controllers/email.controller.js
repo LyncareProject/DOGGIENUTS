@@ -52,33 +52,36 @@ exports.postEmail = async (req, res) => {
       to: doggienutsEmail, // list of receivers
       subject: "Doggienuts Product Inquiries", // Subject line
       html: `<div style='
-                  width: 100%;
-                  min-height: 1300px
-              '>
-                  <div style='
-                          text-align: left;
-                          width: 800px;
-                          margin: 30px auto;
-                          padding: 40px 80px;
-                          border: 1px solid #EDEDED;
-                          background: #FFF;
-                          box-sizing: border-box;
-                      '>
-                      <h3 style='font-size : 26px; font-weight : 400; margin-bottom : 30px; text-align: center;'>Doggienuts 문의 내역</h3> 
-                      <p style='font-size : 18px; margin-bottom : 30px; text-align: center;'>이메일 By <span style='font-weight : 600; margin-right: 10px; text-align: center;'>${email}</span></p>      
-                      <p style='font-size : 18px;'>이름 : <span style='font-weight : 600; margin-right: 10px;'>${name}</span></p>
-                      <p style='font-size : 18px;'>핸드폰 : <span style='font-weight : 600; margin-right: 10px;'>${phone}</span></p>
-                      <p style='font-size : 18px;'>회사 : <span style='font-weight : 600; margin-right: 10px;'>${company}</span></p> 
-                      <p style='font-size : 18px;'>국가 : <span style='font-weight : 600; margin-right: 10px;'>${country}</span></p> 
-                      <p style='font-size : 18px;'>선택 품목 : <span style='font-weight : 600; margin-right: 10px;'>${JSON.parse(
-                        selectItems
-                      )}</span></p>
-                      <p style='font-size : 18px;'>샘플 품목 : <span style='font-weight : 600; margin-right: 10px;'>${JSON.parse(
-                        sample
-                      )}</span></p>
-                      <p style='font-size : 18px;'>문의내용 : <span style='font-weight : 600; margin-right: 10px;'>${products}</span></p>
-                  </div>
-              </div>`,
+                    width: 100%;
+                    min-height: 1300px
+                '>
+                    <div style='
+                            text-align: left;
+                            width: 800px;
+                            margin: 30px auto;
+                            padding: 40px 80px;
+                            border: 1px solid #EDEDED;
+                            background: #FFF;
+                            box-sizing: border-box;
+                        '>
+                        <h3 style='font-size : 26px; font-weight : 400; margin-bottom : 30px; text-align: center;'>Doggienuts 문의 내역</h3> 
+                        <p style='font-size : 18px; margin-bottom : 30px; text-align: center;'>이메일 By <span style='font-weight : 600; margin-right: 10px; text-align: center;'>${email}</span></p>
+                        <div style='width: 400px; display: flex; flex-direction: column; justify-content: center; margin: 0 auto'>
+                        <p style='font-size : 18px;'>이름 : <span style='font-weight : 600; margin-right: 10px;'>${name}</span></p>
+                        <p style='font-size : 18px;'>핸드폰 : <span style='font-weight : 600; margin-right: 10px;'>${phone}</span></p>
+                        <p style='font-size : 18px;'>회사 : <span style='font-weight : 600; margin-right: 10px;'>${company}</span></p> 
+                        <p style='font-size : 18px;'>국가 : <span style='font-weight : 600; margin-right: 10px;'>${country}</span></p> 
+                        <p style='font-size : 18px;'>선택 품목 : <span style='font-weight : 600; margin-right: 10px;'>${JSON.parse(
+                          selectItems
+                        )}</span></p>
+                        <p style='font-size : 18px;'>샘플 품목 : <span style='font-weight : 600; margin-right: 10px;'>${JSON.parse(
+                          sample
+                        )}</span></p>
+                        </div>      
+                        <p style='font-size : 18px; text-align: center'>문의내용</p>
+                        <div style='font-weight : 600; margin-right: 10px; text-align: justify'>${products}</div>
+                    </div>
+                </div>`,
     })
     .then((response) => {
       console.log("Email sent: " + response.response);
@@ -91,20 +94,21 @@ exports.postEmail = async (req, res) => {
         to: email, // list of receivers
         subject: "Doggienuts Product Inquiries", // Subject line
         html: `<div style='
-                  width: 100%;
-                  min-height: 1300px
-              '>
-                  <div style='
-                          text-align: center;
-                          width: 800px;
-                          margin: 30px auto;
-                          padding: 40px 80px;
-                          border: 1px solid #EDEDED;
-                          background: #FFF;
-                          box-sizing: border-box;
-                      '>
-                      <h3 style='font-size : 26px; font-weight : 400; margin-bottom : 30px;'>Doggienuts Product Inquiries</h3> 
-                      <p style='font-size : 18px; margin-bottom : 30px;'>Email By  <span style='font-weight : 600; margin-right: 10px;'>${email}</span></p>      
+        width: 100%;
+        min-height: 1300px
+    '>
+        <div style='
+                text-align: left;
+                width: 800px;
+                margin: 30px auto;
+                padding: 40px 80px;
+                border: 1px solid #EDEDED;
+                background: #FFF;
+                box-sizing: border-box;
+            '>
+                      <h3 style='font-size : 26px; font-weight : 400; margin-bottom : 30px; text-align: center;'>Doggienuts Product Inquiries</h3> 
+                      <p style='font-size : 18px; margin-bottom : 30px;'>Email By  <span style='font-weight : 600; margin-right: 10px; text-align: center;'>${email}</span></p>
+                      <div style='width: 400px; display: flex; flex-direction: column; justify-content: center; margin: 0 auto'>      
                       <p style='font-size : 18px;'>Name : <span style='font-weight : 600; margin-right: 10px;'>${name}</span></p>
                       <p style='font-size : 18px;'>Phone : <span style='font-weight : 600; margin-right: 10px;'>${phone}</span></p>
                       <p style='font-size : 18px;'>Company : <span style='font-weight : 600; margin-right: 10px;'>${company}</span></p> 
@@ -115,7 +119,9 @@ exports.postEmail = async (req, res) => {
                       <p style='font-size : 18px;'>Sample of interest : <span style='font-weight : 600; margin-right: 10px;'>${JSON.parse(
                         sample
                       )}</span></p>
-                      <p style='font-size : 18px;'>Text Area : <span style='font-weight : 600; margin-right: 10px;'>${products}</span></p>
+                      </div>
+                      <p style='font-size : 18px; text-align: center'>Text Area</p>
+                      <div style='font-weight : 600; margin-right: 10px; text-align: justify'>${products}</div>
                   </div>
               </div>`,
       })

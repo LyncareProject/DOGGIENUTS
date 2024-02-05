@@ -66,7 +66,7 @@ exports.postEmailZhCht = async (req, res) => {
                         '>
                         <h3 style='font-size : 26px; font-weight : 400; margin-bottom : 30px; text-align: center;'>Doggienuts 문의 내역</h3> 
                         <p style='font-size : 18px; margin-bottom : 30px; text-align: center;'>이메일 By <span style='font-weight : 600; margin-right: 10px; text-align: center;'>${email}</span></p>
-                        <div style='text-align : center'>
+                        <div style='width: 400px; display: flex; flex-direction: column; justify-content: center; margin: 0 auto'>
                         <p style='font-size : 18px;'>이름 : <span style='font-weight : 600; margin-right: 10px;'>${name}</span></p>
                         <p style='font-size : 18px;'>핸드폰 : <span style='font-weight : 600; margin-right: 10px;'>${phone}</span></p>
                         <p style='font-size : 18px;'>회사 : <span style='font-weight : 600; margin-right: 10px;'>${company}</span></p> 
@@ -79,7 +79,8 @@ exports.postEmailZhCht = async (req, res) => {
                         )}</span></p>
                         <p style='font-size : 18px; font-weight : 600; margin-right: 10px; color: gray'>| 甜甜圈 도넛 | 脆片 칩 | 燉菜 스튜 | 오메가 3 |</p>
                         </div>      
-                        <p style='font-size : 18px;'>문의내용 : <br /> <span style='font-weight : 600; margin-right: 10px;'>${products}</span></p>
+                        <p style='font-size : 18px; text-align: center'>문의내용</p>
+                        <div style='font-weight : 600; margin-right: 10px; text-align: justify'>${products}</div>
                     </div>
                 </div>`,
     })
@@ -94,20 +95,21 @@ exports.postEmailZhCht = async (req, res) => {
         to: email, // list of receivers
         subject: "Doggienuts 確認產品諮詢", // Subject line
         html: `<div style='
-                    width: 100%;
-                    min-height: 1300px
-                '>
-                    <div style='
-                            text-align: center;
-                            width: 800px;
-                            margin: 30px auto;
-                            padding: 40px 80px;
-                            border: 1px solid #EDEDED;
-                            background: #FFF;
-                            box-sizing: border-box;
-                        '>
-                        <h3 style='font-size : 26px; font-weight : 400; margin-bottom : 30px;'>Doggienuts 確認產品諮詢</h3> 
-                        <p style='font-size : 18px; margin-bottom : 30px;'>電子郵箱 : <span style='font-weight : 600; margin-right: 10px;'>${email}</span></p>      
+        width: 100%;
+        min-height: 1300px
+    '>
+        <div style='
+                text-align: left;
+                width: 800px;
+                margin: 30px auto;
+                padding: 40px 80px;
+                border: 1px solid #EDEDED;
+                background: #FFF;
+                box-sizing: border-box;
+            '>
+                        <h3 style='font-size : 26px; font-weight : 400; margin-bottom : 30px; text-align: center;'>Doggienuts 確認產品諮詢</h3> 
+                        <p style='font-size : 18px; margin-bottom : 30px;'>電子郵箱 : <span style='font-weight : 600; margin-right: 10px; text-align: center;'>${email}</span></p>      
+                        <div style='width: 400px; display: flex; flex-direction: column; justify-content: center; margin: 0 auto'>
                         <p style='font-size : 18px;'>姓名 : <span style='font-weight : 600; margin-right: 10px;'>${name}</span></p>
                         <p style='font-size : 18px;'>電話號碼 : <span style='font-weight : 600; margin-right: 10px;'>${phone}</span></p>
                         <p style='font-size : 18px;'>公司 : <span style='font-weight : 600; margin-right: 10px;'>${company}</span></p> 
@@ -118,7 +120,9 @@ exports.postEmailZhCht = async (req, res) => {
                         <p style='font-size : 18px;'>感興趣的樣品 : <span style='font-weight : 600; margin-right: 10px;'>${JSON.parse(
                           sample
                         )}</span></p>
-                        <p style='font-size : 18px;'>咨詢內容 : <span style='font-weight : 600; margin-right: 10px;'>${products}</span></p>
+                        </div>   
+                        <p style='font-size : 18px; text-align: center'>咨詢內容</p>
+                        <div style='font-weight : 600; margin-right: 10px; text-align: justify'>${products}</div>
                     </div>
                 </div>`,
       })
