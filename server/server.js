@@ -8,22 +8,22 @@ const mongo = require("./mongo");
 require("dotenv").config();
 
 const corsOptions = {
-  origin: ["http://petsmeal.wevibe.co.kr/", "http://localhost:3000/"],
+  origin: ["http://petsmeal.wevibe.co.kr/", "http://localhost:3000"],
 };
 
 app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use(express.static(path.join(__dirname, "./dist")));
+// app.use(express.static(path.join(__dirname, "./dist")));
 
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "dist", "index.html"));
-});
+// app.get("/", (req, res) => {
+//   res.sendFile(path.join(__dirname, "dist", "index.html"));
+// });
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "dist", "index.html"));
-});
+// app.get("*", (req, res) => {
+//   res.sendFile(path.join(__dirname, "dist", "index.html"));
+// });
 
 readdirSync("./routes").map((r) => app.use("/api", require("./routes/" + r)));
 
