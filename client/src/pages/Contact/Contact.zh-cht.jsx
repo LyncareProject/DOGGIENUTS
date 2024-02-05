@@ -64,7 +64,6 @@ const ContactZhCht = ({ setSending }) => {
     } else {
       setSelectItems([...selectItems, value]);
     }
-    console.log(selectItems);
   };
   const sampleItems = ["甜甜圈", " 脆片", " 燉菜", " Omega 3"];
   const sampleCheckboxChange = (event) => {
