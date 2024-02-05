@@ -59,8 +59,8 @@ const ContactZhCht = ({ setSending }) => {
   const items = ["甜甜圈", " 脆片", " 燉菜", " Omega 3"];
   const handleCheckboxChange = (event) => {
     const value = event.target.value;
-    if (items.includes(value)) {
-      setSelectItems(items.filter((items) => items !== value));
+    if (selectItems.includes(value)) {
+      setSelectItems(selectItems.filter((items) => items !== value));
     } else {
       setSelectItems([...selectItems, value]);
     }
