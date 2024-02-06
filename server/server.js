@@ -8,7 +8,7 @@ const mongo = require("./mongo");
 require("dotenv").config();
 
 const corsOptions = {
-  origin: ["http://petsmeal.wevibe.co.kr/", "http://localhost:3000"],
+  origin: ["https://petsmealkorea.com/", "http://localhost:3000"],
 };
 
 app.use(cors(corsOptions));
