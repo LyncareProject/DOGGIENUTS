@@ -26,15 +26,15 @@ function App() {
   const [sending, setSending] = useState(false);
   const lang = navigator.language.toLowerCase().substring(0.2);
   const navigate = useNavigate();
-  // useEffect(() => {
-  if (lang === "zh-tw") {
-    if (window.location.href.indexOf("zh-cht") !== -1) {
-      return !1;
-    } else {
-      window.location.href = "https://petsmealkorea.com/zh-cht";
+  useEffect(() => {
+    if (lang === "zh-tw") {
+      if (window.location.href.indexOf("zh-cht") !== -1) {
+        return !1;
+      } else {
+        navigate("/zh-cht");
+      }
     }
-  }
-  // }, []);
+  }, []);
   const Layout = () => {
     return (
       <div>
