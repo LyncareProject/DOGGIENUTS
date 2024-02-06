@@ -31,7 +31,7 @@ function App() {
     if (window.location.href.indexOf("zh-cht") !== -1) {
       return !1;
     } else {
-      window.location.href = "http://petsmealkorea.com/zh-cht";
+      window.location.href = "https://petsmealkorea.com/zh-cht";
     }
   }
   // }, []);
