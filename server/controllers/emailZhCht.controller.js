@@ -7,8 +7,8 @@ const { email: Email } = db;
 
 const transporter = nodemailer.createTransport({
   service: EMAIL_SERVICE, // 메일 보내는 곳
-  port: 587,
-  host: "smtp.gmail.com",
+  port: 465,
+  host: "smtp.naver.com",
   secure: false,
   requireTLS: true,
   auth: {
@@ -18,8 +18,8 @@ const transporter = nodemailer.createTransport({
 });
 const customer = nodemailer.createTransport({
   service: EMAIL_SERVICE, // 메일 보내는 곳
-  port: 587,
-  host: "smtp.gmail.com",
+  port: 465,
+  host: "smtp.naver.com",
   secure: false,
   requireTLS: true,
   auth: {
@@ -28,7 +28,7 @@ const customer = nodemailer.createTransport({
   },
 });
 
-const doggienutsEmail = "chalgyu1029@gmail.com";
+const doggienutsEmail = "marketing@wevibe.co.kr";
 
 exports.postEmailZhCht = async (req, res) => {
   const {
