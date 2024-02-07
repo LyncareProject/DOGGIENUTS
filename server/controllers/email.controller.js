@@ -28,7 +28,7 @@ const customer = nodemailer.createTransport({
   },
 });
 
-const doggienutsEmail = "marketing@wevibe.co.kr";
+const doggienutsEmail = "petsmealkorea@naver.com";
 
 exports.postEmail = async (req, res) => {
   const {
