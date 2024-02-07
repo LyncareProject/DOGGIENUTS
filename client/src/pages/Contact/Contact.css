@@ -200,3 +200,9 @@
     gap: 0;
   }
 }
+
+@media (max-width: 360px){
+  .ContactSelectWrap{
+    padding: 7px 0px;
+  }
+}
