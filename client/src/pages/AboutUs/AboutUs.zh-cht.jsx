@@ -2,18 +2,16 @@ import React, { useState, useEffect, useRef } from "react";
 import "./AboutUs.css";
 
 import WEARE from "./../../assets/img/AboutUs/WEARE.png";
-import Weare_bg from "./../../assets/img/AboutUs/Weare_bg.png";
-import K_petfair from "./../../assets/img/AboutUs/K_petfair.png";
+import Weare_bg from "./../../assets/img/AboutUs/Weare_bg.jpg";
+import K_petfair from "./../../assets/img/AboutUs/K_petfair.jpg";
 import History from "./../../assets/img/AboutUs/History.png";
-import History_bg from "./../../assets/img/AboutUs/History_bg.png";
 import Currentsituation from "./../../assets/img/AboutUs/Currentsituation.png";
-import Currentsituation_bg from "./../../assets/img/AboutUs/Currentsituation_bg.png";
-import Currentsituation_bg1 from "./../../assets/img/AboutUs/Currentsituation_bg1.png";
-import Currentsituation_bg2 from "./../../assets/img/AboutUs/Currentsituation_bg2.png";
+import Currentsituation_bg1 from "./../../assets/img/AboutUs/Currentsituation_bg1.jpg";
+import Currentsituation_bg2 from "./../../assets/img/AboutUs/Currentsituation_bg2.jpg";
 import open_bracket from "./../../assets/img/AboutUs/open_bracket.png";
 import close_bracket from "./../../assets/img/AboutUs/close_bracket.png";
 import close_bracketLeft from "./../../assets/img/AboutUs/close_bracketLeft.png";
-import OfficialsImg from "./../../assets/img/AboutUs/OfficialsImg.png";
+import OfficialsImg from "./../../assets/img/AboutUs/OfficialsImg.jpg";
 
 import ContactBarZhCht from "../../components/ContactBar/ContactBar.zh-cht";
 
@@ -89,7 +87,7 @@ const AboutUsZhCht = () => {
 
       <div className="seciton_3">
         <h3>
-          <img src={History} alt="History" />
+          <img src={ History } alt="History" />
         </h3>
         <div className="seciton_3_flex">
           <p className="seciton_3border"></p>
