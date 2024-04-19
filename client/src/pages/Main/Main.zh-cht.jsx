@@ -24,6 +24,8 @@ import Button from "../../components/Button/Button";
 import ContactBarZhCht from "../../components/ContactBar/ContactBar.zh-cht";
 
 export default function MainZhCht() {
+
+  // 첨부파일 다운로드 함수
   const downloadFileURL = (url) => {
     const fileName = url.split("/").pop();
     const aTag = document.createElement("a");

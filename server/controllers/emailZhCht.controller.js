@@ -28,7 +28,7 @@ const customer = nodemailer.createTransport({
   },
 });
 
-const doggienutsEmail = "petsmealkorea@naver.com";
+const doggienutsEmail = "petsmealkorea@naver.com"; // 어드민 이메일
 
 exports.postEmailZhCht = async (req, res) => {
   const {
@@ -48,9 +48,9 @@ exports.postEmailZhCht = async (req, res) => {
   };
   await transporter
     .sendMail({
-      from: EMAIL_USER, // sender address
-      to: doggienutsEmail, // list of receivers
-      subject: "Doggienuts 문의내역", // Subject line
+      from: EMAIL_USER, // 어드민 이메일
+      to: doggienutsEmail, // 어드민 이메일
+      subject: "Doggienuts 문의내역", // 메일 제목
       html: `<div style='
                     width: 100%;
                     min-height: 1300px
@@ -91,9 +91,9 @@ exports.postEmailZhCht = async (req, res) => {
     .catch((error) => console.log(error))
     .then(
       await customer.sendMail({
-        from: EMAIL_USER, // sender address
-        to: email, // list of receivers
-        subject: "Doggienuts 確認產品諮詢", // Subject line
+        from: EMAIL_USER, // 어드민 이메일
+        to: email, // 고객 이메일
+        subject: "Doggienuts 確認產品諮詢", // 메일 제목
         html: `<div style='
         width: 100%;
         min-height: 1300px
