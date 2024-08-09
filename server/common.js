@@ -5,7 +5,7 @@ const MONGO_CLUSTER =
   process.env.MONGO_CLUSTER || "lyncare.5ip2vsa.mongodb.net";
 const MONGO_DBNAME = process.env.MONGO_DBNAME || "doggienuts";
 const EMAIL_SERVICE = process.env.EMAIL_SERVICE || "naver";
-const EMAIL_USER = process.env.EMAIL_USER || "petsmealkorea@naver.com";
+const EMAIL_USER = process.env.EMAIL_USER || "petsmealfarm@naver.com";
 const EMAIL_PASSWORD = process.env.EMAIL_PASSWORD || "Pmk@1q2w3e4r";
 
 /* eslint-disable prefer-destructuring */

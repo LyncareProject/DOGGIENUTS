@@ -22,7 +22,7 @@ const Footer = () => {
             Commercial Representative : Alex Kim, David So(Head of Overseas
             Business)
           </p>
-          <p>E-mail : petsmealkorea@naver.com</p>
+          <p>E-mail : petsmealfarm@naver.com</p>
         </div>
         <div className="Footer_flex2">
           <p>

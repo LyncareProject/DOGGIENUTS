@@ -19,7 +19,7 @@ const FooterChnZhCht = () => {
 
         <div className="Footer_flex1">
           <p>代表：金鍾植、蘇章永(海外事業本部長)</p>
-          <p>電子郵箱：petsmealkorea@naver.com</p>
+          <p>電子郵箱：petsmealfarm@naver.com</p>
         </div>
         <div className="Footer_flex2">
           <p>

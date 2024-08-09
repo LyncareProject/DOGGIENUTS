@@ -28,7 +28,7 @@ const customer = nodemailer.createTransport({
   },
 });
 
-const doggienutsEmail = "petsmealkorea@naver.com"; // 어드민 이메일
+const doggienutsEmail = "petsmealfarm@naver.com"; // 어드민 이메일
 
 exports.postEmail = async (req, res) => {
   const {
